@@ -1,0 +1,313 @@
+/*
+ * Shared theme engine.
+ *
+ * Theme files should define variables only. This file applies those variables
+ * consistently to public pages, setup, and moderator tools.
+ */
+html {
+    /* Color roles */
+    --theme-scheme: light;
+    --theme-bg: #eef2ff;
+    --theme-bg-image: none;
+    --theme-bg-repeat: repeat;
+    --theme-bg-position: top center;
+    --theme-bg-size: auto;
+    --theme-bg-attachment: scroll;
+    --theme-text: #000000;
+    --theme-link: #34345c;
+    --theme-hover: #d00000;
+    --theme-muted: #707070;
+    --theme-nav: #8899aa;
+    --theme-link-contrast: #ffffff;
+    --theme-heading: #af0a0f;
+    --theme-panel: #d6daf0;
+    --theme-border: #b7c5d9;
+    --theme-line: #d8deef;
+    --theme-surface: #ffffff;
+    --theme-accent: #9988ee;
+    --theme-accent-text: #000000;
+    --theme-input: #ffffff;
+    --theme-input-border: #a9a9a9;
+    --theme-subject: #0f0c5d;
+    --theme-name: #117743;
+    --theme-quote: #789922;
+    --theme-button: #eeeeee;
+    --theme-button-border: #cccccc;
+    --theme-button-hover: #dddddd;
+    --theme-card-hover: #c9cfe8;
+    --theme-pgn: rgba(255, 255, 255, 0.55);
+    --theme-pgn-border: var(--theme-accent);
+    --theme-danger: #800000;
+    --theme-danger-bg: #f0c0b0;
+    --theme-danger-border: #d99f97;
+    --theme-success: #174f28;
+    --theme-success-bg: #d8ead8;
+    --theme-success-border: #9cba9c;
+    --theme-reply-mode: #0010e0;
+    --theme-lock: #e04000;
+
+    /* Shape and typography roles */
+    --theme-font: Arial, Helvetica, sans-serif;
+    --theme-heading-font: Tahoma, Arial, Helvetica, sans-serif;
+    --theme-heading-letter-spacing: -1px;
+    --theme-radius: 0;
+    --theme-reply-radius: 0;
+    --theme-control-radius: 0;
+    --theme-image-radius: 0;
+    --theme-shadow: none;
+    --theme-reply-border-width: 0 1px 1px 0;
+    --theme-reply-border-style: solid;
+    --theme-panel-texture: none;
+
+    color-scheme: var(--theme-scheme);
+    color: var(--theme-text);
+    background: var(--theme-bg);
+}
+
+body {
+    color: var(--theme-text);
+    background-color: var(--theme-bg);
+    background-image: var(--theme-bg-image);
+    background-repeat: var(--theme-bg-repeat);
+    background-position: var(--theme-bg-position);
+    background-size: var(--theme-bg-size);
+    background-attachment: var(--theme-bg-attachment);
+    font-family: var(--theme-font);
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: var(--theme-font);
+}
+
+.board-heading h1 {
+    font-family: var(--theme-heading-font);
+    letter-spacing: var(--theme-heading-letter-spacing);
+}
+
+a,
+a:visited,
+.post-menu > summary,
+.post__actions > a,
+.post__actions > details > summary,
+.moderator-edit > summary,
+.text-button,
+.mod-nav button,
+.button--quiet,
+.stack-form label > span,
+.form-row label > span,
+.board-card__address,
+.board-card__stats {
+    color: var(--theme-link);
+}
+
+a:hover,
+.post-menu[open] > summary {
+    color: var(--theme-hover);
+}
+
+.skip-link {
+    color: var(--theme-link-contrast);
+    background: var(--theme-link);
+}
+
+.board-list,
+.pagination {
+    color: var(--theme-nav);
+}
+
+.board-heading h1,
+.board-subtitle,
+.empty-state h2,
+.post__status,
+.admin-heading h1,
+.metric-grid strong,
+.auth-card h1,
+.error-page h1,
+.setup-checks .is-missing > span:first-child {
+    color: var(--theme-heading);
+}
+
+.muted,
+.unimportant,
+.eyebrow,
+.post-form__hint,
+.attachment figcaption span,
+.post__deleted-message,
+.omitted,
+.report-card__meta,
+.admin-section td small,
+.setup-checks small {
+    color: var(--theme-muted);
+}
+
+.flash,
+.post-form,
+.post--reply,
+.post-menu__panel,
+.pagination,
+.mod-nav,
+.metric-grid article,
+.board-card,
+.report-card,
+.setup-message {
+    color: var(--theme-text);
+    background-color: var(--theme-panel);
+    background-image: var(--theme-panel-texture);
+    border-color: var(--theme-border);
+    border-radius: var(--theme-radius);
+    box-shadow: var(--theme-shadow);
+}
+
+.post--reply {
+    border-width: var(--theme-reply-border-width);
+    border-style: var(--theme-reply-border-style);
+    border-radius: var(--theme-reply-radius);
+}
+
+.flash--error,
+.setup-message--error {
+    color: var(--theme-danger);
+    background: var(--theme-danger-bg);
+    border-color: var(--theme-danger-border);
+}
+
+.flash--success {
+    color: var(--theme-success);
+    background: var(--theme-success-bg);
+    border-color: var(--theme-success-border);
+}
+
+.board-index,
+.box,
+.stack-form,
+.admin-section table,
+.auth-card {
+    color: var(--theme-text);
+    background: var(--theme-surface);
+    border-color: var(--theme-accent);
+    border-radius: var(--theme-radius);
+    box-shadow: var(--theme-shadow);
+}
+
+.box-title,
+.board-index > h2,
+.admin-section > h2,
+.section-heading h2 {
+    color: var(--theme-accent-text);
+    background: var(--theme-accent);
+}
+
+.board-table th {
+    color: var(--theme-link);
+    background: var(--theme-panel);
+}
+
+.admin-section th {
+    color: var(--theme-text);
+    background: var(--theme-panel);
+}
+
+.board-rule,
+.thread-preview,
+.post__actions form,
+.moderator-actions__forms,
+.moderator-edit-form {
+    border-color: var(--theme-border);
+}
+
+.board-table th,
+.board-table td,
+.admin-section th,
+.admin-section td,
+.setup-checks li {
+    border-color: var(--theme-line);
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    color: var(--theme-text);
+    background: var(--theme-input);
+    border-color: var(--theme-input-border);
+    border-radius: var(--theme-control-radius);
+}
+
+.reply-mode {
+    background: var(--theme-reply-mode);
+}
+
+.reply-mode--locked {
+    background: var(--theme-lock);
+}
+
+.post__subject,
+.board-card h2 {
+    color: var(--theme-subject);
+}
+
+.post__name,
+.setup-checks .is-ready > span:first-child {
+    color: var(--theme-name);
+}
+
+.quote {
+    color: var(--theme-quote);
+}
+
+.pgn {
+    color: var(--theme-text);
+    background: var(--theme-pgn);
+    border-color: var(--theme-pgn-border);
+    border-radius: var(--theme-control-radius);
+}
+
+.attachment img {
+    border-radius: var(--theme-image-radius);
+}
+
+.pagination span,
+.board-card,
+.board-card:hover {
+    color: var(--theme-text);
+}
+
+.button,
+.button:visited {
+    color: var(--theme-text);
+    background: var(--theme-button);
+    border-color: var(--theme-button-border);
+    border-radius: var(--theme-control-radius);
+}
+
+.button:hover {
+    color: var(--theme-text);
+    background: var(--theme-button-hover);
+}
+
+.board-card:hover {
+    color: var(--theme-text);
+    background: var(--theme-card-hover);
+}
+
+.button--danger,
+.text-button--danger {
+    color: var(--theme-danger);
+}
+
+.setup-checks li {
+    background: var(--theme-bg);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus-visible,
+summary:focus-visible,
+a:focus-visible {
+    outline-color: var(--theme-text);
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		var active_page = "archive"
+		  , board_name = "{{ board.uri }}";
+	</script>
+	{% include 'header.html' %}
+	<title>{{ board.url }} - {% trans %}Archive{% endtrans %}</title>
+	<style>
+		.archive-list { list-style: none; padding: 0; margin: 1rem 0; }
+		.archive-list li {
+			display: flex; gap: 0.75rem; align-items: flex-start;
+			border-bottom: 1px solid #ccc; padding: 0.6rem 0;
+		}
+		.archive-list .athumb img { max-width: 100px; max-height: 100px; }
+		.archive-list .ameta { font-size: 0.9em; opacity: 0.85; }
+		.archive-list .asnippet { margin-top: 0.25rem; }
+		.archive-banner { font-weight: bold; }
+		.archive-empty { margin: 2rem 0; opacity: 0.8; }
+	</style>
+</head>
+<body class="8chan vichan is-not-moderator active-archive" data-stylesheet="{% if config.default_stylesheet.1 != '' %}{{ config.default_stylesheet.1 }}{% else %}default{% endif %}">
+	{{ boardlist.top }}
+
+	<header>
+		<h1>{{ board.url }} - {% trans %}Archive{% endtrans %}</h1>
+		<div class="subtitle">
+			{% trans %}Read-only threads that have left the board{% endtrans %}
+			— <a href="{{ return }}">[{% trans %}Back to board{% endtrans %}]</a>
+			{% if config.catalog_link %}
+				<a href="{{ config.root }}{{ board.dir }}{{ config.catalog_link }}">[{% trans %}Catalog{% endtrans %}]</a>
+			{% endif %}
+		</div>
+	</header>
+
+	<div class="banner archive-banner">
+		{% trans %}Archive{% endtrans %}
+		{% if total %} — {{ total }} {% if total == 1 %}{% trans %}thread{% endtrans %}{% else %}{% trans %}threads{% endtrans %}{% endif %}{% endif %}
+	</div>
+
+	{% if threads %}
+	<ul class="archive-list">
+		{% for t in threads %}
+		<li>
+			{% if t.thumb %}
+			<a class="athumb" href="{{ t.url }}"><img src="{{ config.uri_thumb }}{{ t.thumb }}" alt="" /></a>
+			{% endif %}
+			<div>
+				<a href="{{ t.url }}"><strong>{% if t.subject %}{{ t.subject|e }}{% else %}No.{{ t.id }}{% endif %}</strong></a>
+				<span class="ameta">
+					— {{ t.name|e }}
+					— No.{{ t.id }}
+					— {{ t.reply_count }} {% if t.reply_count == 1 %}{% trans %}reply{% endtrans %}{% else %}{% trans %}replies{% endtrans %}{% endif %}
+					— {% trans %}posted{% endtrans %} <time datetime="{{ t.time|date('c') }}">{{ t.time|date(config.post_date) }}</time>
+					— {% trans %}archived{% endtrans %} <time datetime="{{ t.archived_at|date('c') }}">{{ t.archived_at|date(config.post_date) }}</time>
+				</span>
+				<div class="asnippet">{{ t.snippet|e }}</div>
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+	{% else %}
+	<p class="archive-empty">{% trans %}No archived threads yet. When threads fall off the board they will appear here, read-only.{% endtrans %}</p>
+	{% endif %}
+
+	{% if pages|length > 1 %}
+	<div class="pages">
+		{% for page in pages %}
+		 [<a {% if page.selected %}class="selected"{% endif %}{% if not page.selected %}href="{{ page.link }}"{% endif %}>{{ page.num }}</a>]
+		{% endfor %}
+	</div>
+	{% endif %}
+
+	{{ boardlist.bottom }}
+	{% include 'footer.html' %}
+	<script type="text/javascript">{% verbatim %}
+		ready();
+	{% endverbatim %}</script>
+</body>
+</html>

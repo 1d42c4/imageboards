@@ -1,0 +1,41 @@
+/* French Defense
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: light; /* Browser color scheme. */
+    --theme-bg: #edf0f7; /* Page background color. */
+    --theme-bg-image: linear-gradient(90deg, rgba(40,70,150,.035) 50%, transparent 50%); /* Optional page gradient or image. */
+    --theme-bg-size: 36px 36px; /* Background sizing. */
+    --theme-text: #182033; /* Main text. */
+    --theme-link: #243f72; /* Links and secondary actions. */
+    --theme-hover: #a62940; /* Hovered links. */
+    --theme-muted: #626b7d; /* Quiet metadata. */
+    --theme-nav: #626b7d; /* Board navigation. */
+    --theme-heading: #8b2738; /* Board and page headings. */
+    --theme-panel: #dce2ef; /* Reply boxes and utility panels. */
+    --theme-border: #acb8cf; /* Main borders. */
+    --theme-line: #acb8cf; /* Subtle separators. */
+    --theme-surface: #fbfcff; /* Raised content surfaces. */
+    --theme-accent: #879bc3; /* Section title bars. */
+    --theme-accent-text: #000000; /* Text on accent bars. */
+    --theme-input: #ffffff; /* Input background. */
+    --theme-input-border: #acb8cf; /* Input borders. */
+    --theme-subject: #2a3d68; /* Post subjects. */
+    --theme-name: #2c6d52; /* Poster names. */
+    --theme-quote: #607824; /* Greentext. */
+    --theme-button: #dce2ef; /* Button face. */
+    --theme-button-border: #acb8cf; /* Button border. */
+    --theme-button-hover: #879bc3; /* Hovered button. */
+    --theme-card-hover: #879bc3; /* Hovered cards. */
+    --theme-pgn: #fbfcff; /* PGN block background. */
+    --theme-pgn-border: #879bc3; /* PGN accent border. */
+    --theme-font: "Trebuchet MS", Arial, sans-serif; /* Site font stack. */
+    --theme-heading-font: Palatino, Georgia, serif; /* Heading font stack. */
+    --theme-heading-letter-spacing: 0; /* Heading spacing. */
+    --theme-radius: 7px; /* General corner radius. */
+    --theme-reply-radius: 7px; /* Reply corner radius. */
+    --theme-control-radius: 5px; /* Form and button radius. */
+    --theme-shadow: 0 1px 5px rgba(35,55,100,.12); /* Panel shadow. */
+}

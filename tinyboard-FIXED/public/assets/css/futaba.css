@@ -1,0 +1,6 @@
+/* Alternate Futaba-like palette — link from settings later */
+@import url('yotsuba.css');
+body { background-color: #FFFFEE; }
+.post.reply { background: #F0E0D6; border-color: #D9BFB7; }
+form.post-form th { background: #EA8; }
+hr { border-top-color: #D9BFB7; }

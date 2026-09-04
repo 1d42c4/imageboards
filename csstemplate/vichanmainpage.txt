@@ -1,0 +1,1085 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            var active_page = "index"
+              , board_name = "pol";
+        </script>
+        <link rel="stylesheet" media="screen" href="/board/stylesheets/style.css">
+        <link rel="shortcut icon" href="/board/favicon.ico">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="/board/stylesheets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/board/static/flags/flags.css">
+        <script type="text/javascript">
+            var configRoot = "/board/";
+            var inMod = false;
+            var modRoot = "/board/" + (inMod ? "mod.php?/" : "");
+        </script>
+        <script type="text/javascript" src="/board/main.js"></script>
+        <script type="text/javascript" src="/board/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/board/js/inline-expanding.js"></script>
+        <script type="text/javascript" src="/board/js/multi-image.js"></script>
+        <script type="text/javascript" src="/board/js/webm-settings.js"></script>
+        <script type="text/javascript" src="/board/js/expand-video.js"></script>
+        <script type="text/javascript" src="/board/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/board/js/jquery-ui.custom.min.js"></script>
+        <script type="text/javascript" src="/board/js/style-select.js"></script>
+        <script type="text/javascript" src="/board/js/quick-reply.js"></script>
+        <script type="text/javascript" src="/board/js/post-hover.js"></script>
+        <script type="text/javascript" src="/board/js/show-backlinks.js"></script>
+        <script type="text/javascript" src="/board/js/auto-reload.js"></script>
+        <script type="text/javascript" src="/board/js/hide-images.js"></script>
+        <script type="text/javascript" src="/board/js/hide-threads.js"></script>
+        <script type="text/javascript" src="/board/js/strftime.min.js"></script>
+        <script type="text/javascript" src="/board/js/local-time.js"></script>
+        <title>/pol/ - Politics and News</title>
+    </head>
+    <body class="8chan vichan is-not-moderator active-index" data-stylesheet="default">
+        <div class="boardlist">
+            <span class="sub" data-description="0">
+                [ <a href="/board/">home</a>
+                ]
+            </span>
+            <span class="sub" data-description="1">
+                [ <a href="/board/o/index.html" title="Auto">o</a>
+                / <a href="/board/g/index.html" title="Technology">g</a>
+                / <a href="/board/v/index.html" title="Video Games">v</a>
+                / <a href="/board/a/index.html" title="Anime">a</a>
+                / <a href="/board/mlp/index.html" title="Pony">mlp</a>
+                ]
+            </span>
+            <span class="sub" data-description="2">
+                [ <a href="/board/art/index.html" title="Arts">art</a>
+                / <a href="/board/mu/index.html" title="Music">mu</a>
+                / <a href="/board/w/index.html" title="Wallpapers">w</a>
+                / <a href="/board/fa/index.html" title="Fashion">fa</a>
+                / <a href="/board/wr/index.html" title="Writing">wr</a>
+                ]
+            </span>
+            <span class="sub" data-description="3">
+                [ <a href="/board/en/index.html" title="General">en</a>
+                / <a href="/board/p/index.html" title="Português">p</a>
+                / <a href="/board/s/index.html" title="Español">s</a>
+                / <a href="/board/m/index.html" title="Meta">m</a>
+                ]
+            </span>
+            <span class="sub" data-description="4">
+                [ <a href="/board/b/index.html" title="Random">b</a>
+                / <a href="/board/t/index.html" title="Torrents">t</a>
+                / <a href="/board/pol/index.html" title="Politics and News">pol</a>
+                ]
+            </span>
+            <span class="sub" data-description="5">
+                [ <a href="/board/all/index.html">all</a>
+                ]
+            </span>
+            <span class="sub" data-description="6">
+                [ <a href="/board/rules.html">rules</a>
+                / <a href="/board/news.html">news</a>
+                / <a href="/board/contact.html">contact</a>
+                / <a href="/board/about.html">about</a>
+                / <a href="/board/donate.html">donate</a>
+                ]
+            </span>
+        </div>
+        <script type='text/javascript'>
+            if (typeof do_boardlist != 'undefined')
+                do_boardlist();
+        </script>
+        <header>
+            <h1>/pol/ - Politics and News</h1>
+            <div class="subtitle"></div>
+        </header>
+        <form name="post" onsubmit="return dopost(this);" enctype="multipart/form-data" action="/board/post.php" method="post">
+            <input type="hidden" name="username" value="%h\&#68;N&#123;&#77;5vqR&#72;[*)li&#67;'L♠Qs2?`&#84;☈y!&#40;&#89;t☉/r&lt;VK,⛂&#54;_1o0u8&#102;P3⚴UF z9]&#45;$&#94;w&#120;">
+            <input type="hidden" name="u9pqn6b7fkjio8v4xdwl1m⛍2g" value="⚭uXAef =♚/v5@">
+            <input type="hidden" name="board" value="pol">
+            <input type="hidden" name="i2l8fu05kx4mwjvc9t⛳" value="Htrh ,f'J!-_&amp;p~R3Z$\2%Wg4k:Q[lO@?8#5d+Sv7i=☽TM.PB(zn⚽jFcb⚣1;o)C0 a{LDN/★&gt;&lt;|*xqK9ewVXm♚YE♺G">
+            <input type="hidden" name="page" value="1">
+            <table>
+                <tr>
+                    <th>
+                        Name<input type="hidden" value="D&#106;&#80;8%t#mFo&gt;\V&#43;&#115;Ckeg*Hi7fMYc♹q4;~&#88;W&#71;&#9766;&#125;&#84;9y[3/&#110;.&#41;lNh?" name="v☒ukom⚄lj4e2pt♄5hxdz1cg70qns">
+                    </th>
+                    <td>
+                        <input type="text" name="name" size="25" maxlength="35" autocomplete="off">
+                        <input id="no_country" name="no_country" type="checkbox">
+                        <label for="no_country">Don't show my flag</label>
+                        <textarea name="⛤1⛧bq894zmj7ya" style="display:none">☳825♳%a/⛋Abq7zFK|L⚏]C`)+B1#.*S$Pjiu☙}h(4@IGVfc;♩R☻&lt;p-_♪QOl☂W:nd[wxkNMZ=?</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Email<input value="zpRGAb;y%'Ffiv♫Pj]0,h/l&amp;&lt;eE♷t?\|H=LC@3V6^x{rBMqIZ⚱&gt; ♕u1-T4S♆*YcwJD" name="text" type="hidden">
+                    </th>
+                    <td>
+                        <input type="text" name="email" size="25" maxlength="40" autocomplete="off">
+                        <input type="hidden" name="7c1gwqj⛨behza6md⛊⛤ftpu5s☞902" value="">
+                        <input name="url" value="&#59;7UN&#96;" type="hidden">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Subject<input style="display:none" type="text" name="5l61ycriv24mjpd9k" value="">
+                    </th>
+                    <td>
+                        <input style="float:left;" type="text" name="subject" size="25" maxlength="100" autocomplete="off">
+                        <input accesskey="s" style="margin-left:2px;" type="submit" name="post" value="New Thread"/>
+                        <input id="spoiler" name="spoiler" type="checkbox">
+                        <label for="spoiler">Spoiler Image</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Comment</th>
+                    <td>
+                        <textarea name="body" id="body" rows="5" cols="35"></textarea>
+                    </td>
+                </tr>
+                <tr id="upload">
+                    <th>File</th>
+                    <td>
+                        <input type="file" name="file" id="upload_file">
+                        <script type="text/javascript">
+                            if (typeof init_file_selector !== 'undefined')
+                                init_file_selector(3);
+                        </script>
+                    </td>
+                </tr>
+                <tr id="upload_embed">
+                    <th>Embed</th>
+                    <td>
+                        <input type="text" name="embed" value="" size="30" maxlength="120" autocomplete="off">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td>
+                        <input type="text" name="password" value="" size="12" maxlength="18" autocomplete="off">
+                        <span class="unimportant">(For file deletion.)</span>
+                    </td>
+                </tr>
+            </table>
+            <input type="hidden" name="hash" value="1d453c5a2aef54d122b63b99792d11bf921de20d">
+        </form>
+        <script type="text/javascript">
+            rememberStuff();
+        </script>
+        <hr/>
+        <form name="postcontrols" action="/board/post.php" method="post">
+            <input type="hidden" name="board" value="pol"/>
+            <div class="thread" id="thread_1" data-board="pol">
+                <div class="files">
+                    <div class="file">
+                        <p class="fileinfo">
+                            File: <a href="/board/pol/src/1607807053220.jpg">1607807053220.jpg</a>
+                            <span class="unimportant">
+                                (28.08 KB, 770x620, <span class="postfilename">politics.jpg</span>
+                                )
+                            </span>
+                        </p>
+                        <a href="/board/pol/src/1607807053220.jpg" target="_blank">
+                            <img class="post-image" src="/board/pol/thumb/1607807053220.png" style="width:255px;height:206px" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="post op" id="op_1">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1" id="delete_1"/>
+                        <label for="delete_1">
+                            <span class="name">pvnfu</span>
+                            <span class="capcode">## Admin</span>
+                            <time datetime="2020-12-12T21:04:13Z">12/12/20 (Sat) 21:04:13</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1" onclick="highlightReply(1)" href="/board/pol/res/1.html#1">No.</a>
+                        <a class="post_no" onclick="citeReply(1)" href="/board/pol/res/1.html#q1">1</a>
+                        <i class="fa fa-thumb-tack" title="Sticky"></i>
+                        <i class="fa fa-lock" title="Locked"></i>
+                        <a href="/board/pol/res/1.html">[Reply]</a>
+                    </p>
+                    <div class="body">⠀</div>
+                </div>
+                <div class="post reply" id="reply_64">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_64" id="delete_64"/>
+                        <label for="delete_64">
+                            <span class="name">pvnfu</span>
+                            <span class="capcode">## Admin</span>
+                            <img class="flag flag-us" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="United&#x20;States" title="United&#x20;States">
+                            <time datetime="2021-01-07T08:40:59Z">07/01/21 (Thu) 08:40:59</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_64" onclick="highlightReply(64)" href="/board/pol/res/1.html#64">No.</a>
+                        <a class="post_no" onclick="citeReply(64)" href="/board/pol/res/1.html#q64">64</a>
+                    </p>
+                    <div class="files"></div>
+                    <div class="body">Flags are a thing now, retarded admin created a /pol/ board without flags.</div>
+                </div>
+                <br/>
+                <br class="clear"/>
+                <hr/>
+            </div>
+            <div class="thread" id="thread_815" data-board="pol">
+                <div class="files">
+                    <div class="file">
+                        <p class="fileinfo">
+                            File: <a href="/board/pol/src/1666722994127.png">1666722994127.png</a>
+                            <span class="unimportant">
+                                (82.49 KB, 1488x1024, <span class="postfilename">Original.png</span>
+                                )
+                            </span>
+                        </p>
+                        <a href="/board/pol/src/1666722994127.png" target="_blank">
+                            <img class="post-image" src="/board/pol/thumb/1666722994127.png" style="width:260px;height:179px" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="post op" id="op_815">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_815" id="delete_815"/>
+                        <label for="delete_815">
+                            <span class="subject">Play in World Map thread</span>
+                            <span class="name">anon</span>
+                            <time datetime="2022-10-25T18:36:34Z">25/10/22 (Tue) 18:36:34</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_815" onclick="highlightReply(815)" href="/board/pol/res/815.html#815">No.</a>
+                        <a class="post_no" onclick="citeReply(815)" href="/board/pol/res/815.html#q815">815</a>
+                        <a href="/board/pol/res/815.html">[Reply]</a>
+                    </p>
+                    <div class="body">How do you want to see this world? Draw a random map of the world!</div>
+                    <span class="omitted">14 posts and 12 image replies omitted. Click reply to view.</span>
+                </div>
+                <div class="post reply" id="reply_1463">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1463" id="delete_1463"/>
+                        <label for="delete_1463">
+                            <span class="name">anon</span>
+                            <img class="flag flag-ua" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="Ukraine" title="Ukraine">
+                            <time datetime="2026-06-05T10:10:52Z">05/06/26 (Fri) 10:10:52</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1463" onclick="highlightReply(1463)" href="/board/pol/res/815.html#1463">No.</a>
+                        <a class="post_no" onclick="citeReply(1463)" href="/board/pol/res/815.html#q1463">1463</a>
+                    </p>
+                    <div class="files">
+                        <div class="file">
+                            <p class="fileinfo">
+                                File: <a href="/board/pol/src/1780654252650.png">1780654252650.png</a>
+                                <span class="unimportant">
+                                    (203.73 KB, 1300x650, <span class="postfilename" title="Imperium and Eurafrasian Empire.png">Imperium and Eurafrasian E….png</span>
+                                    )
+                                </span>
+                            </p>
+                            <a href="/board/pol/src/1780654252650.png" target="_blank">
+                                <img class="post-image" src="/board/pol/thumb/1780654252650.png" style="width:260px;height:130px" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body"></div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_1466">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1466" id="delete_1466"/>
+                        <label for="delete_1466">
+                            <span class="subject">Kek</span>
+                            <a class="email" href="mailto:OpdivoAddict@gmail.com">
+                                <span class="name">Dude</span>
+                            </a>
+                            <img class="flag flag-us" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="United&#x20;States" title="United&#x20;States">
+                            <time datetime="2026-06-25T13:41:36Z">25/06/26 (Thu) 13:41:36</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1466" onclick="highlightReply(1466)" href="/board/pol/res/815.html#1466">No.</a>
+                        <a class="post_no" onclick="citeReply(1466)" href="/board/pol/res/815.html#q1466">1466</a>
+                    </p>
+                    <div class="files"></div>
+                    <div class="body">
+                        <a onclick="highlightReply('815', event);" href="/board/pol/res/815.html#815">&gt;&gt;815</a>
+                        <br/>As a ball of fire
+                    </div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_1467">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1467" id="delete_1467"/>
+                        <label for="delete_1467">
+                            <span class="name">anon</span>
+                            <img class="flag flag-us" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="United&#x20;States" title="United&#x20;States">
+                            <time datetime="2026-07-26T12:13:52Z">26/07/26 (Sun) 12:13:52</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1467" onclick="highlightReply(1467)" href="/board/pol/res/815.html#1467">No.</a>
+                        <a class="post_no" onclick="citeReply(1467)" href="/board/pol/res/815.html#q1467">1467</a>
+                    </p>
+                    <div class="files">
+                        <div class="file">
+                            <p class="fileinfo">
+                                File: <a href="/board/pol/src/1785068031868.png">1785068031868.png</a>
+                                <span class="unimportant">
+                                    (257.57 KB, 767x783, <span class="postfilename" title="Screenshot 2026-06-17 161926.png">Screenshot 2026-06-17 1619….png</span>
+                                    )
+                                </span>
+                            </p>
+                            <a href="/board/pol/src/1785068031868.png" target="_blank">
+                                <img class="post-image" src="/board/pol/thumb/1785068031868.png" style="width:255px;height:260px" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <a onclick="highlightReply('1466', event);" href="/board/pol/res/815.html#1466">&gt;&gt;1466</a>
+                        <br/>i see a potential GET
+                    </div>
+                </div>
+                <br/>
+                <br class="clear"/>
+                <hr/>
+            </div>
+            <div class="thread" id="thread_1427" data-board="pol">
+                <div class="files">
+                    <div class="file">
+                        <p class="fileinfo">
+                            File: <a href="/board/pol/src/1766861138122.jpg">1766861138122.jpg</a>
+                            <span class="unimportant">
+                                (136.23 KB, 1080x768, <span class="postfilename" title="Screenshot_20251227_084851_Firefox.jpg">Screenshot_20251227_084851….jpg</span>
+                                )
+                            </span>
+                        </p>
+                        <a href="/board/pol/src/1766861138122.jpg" target="_blank">
+                            <img class="post-image" src="/board/pol/thumb/1766861138122.png" style="width:260px;height:185px" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="post op" id="op_1427">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1427" id="delete_1427"/>
+                        <label for="delete_1427">
+                            <span class="subject">pizza in space</span>
+                            <span class="name">Cue (from star trek)</span>
+                            <img class="flag flag-ca" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="Canada" title="Canada">
+                            <time datetime="2025-12-27T18:45:38Z">27/12/25 (Sat) 18:45:38</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1427" onclick="highlightReply(1427)" href="/board/pol/res/1427.html#1427">No.</a>
+                        <a class="post_no" onclick="citeReply(1427)" href="/board/pol/res/1427.html#q1427">1427</a>
+                        <a href="/board/pol/res/1427.html">[Reply]</a>
+                    </p>
+                    <div class="body">
+                        <a href="https://bsky.app/profile/whereisannefrank.bsky.social/post/3maxw4mtvws23" rel="nofollow" target="_blank">https://bsky.app/profile/whereisannefrank.bsky.social/post/3maxw4mtvws23</a>
+                        <br/>
+                        <br/>
+                        They are doing it in space too<br/>
+                        <br/>&#127829;&#127829;&#127829;&#127829;&#127829;&#127829;&#127829;&#127829;
+                    </div>
+                </div>
+                <div class="post reply" id="reply_1428">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1428" id="delete_1428"/>
+                        <label for="delete_1428">
+                            <span class="name">anon</span>
+                            <img class="flag flag-us" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="United&#x20;States" title="United&#x20;States">
+                            <time datetime="2025-12-27T20:22:39Z">27/12/25 (Sat) 20:22:39</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1428" onclick="highlightReply(1428)" href="/board/pol/res/1427.html#1428">No.</a>
+                        <a class="post_no" onclick="citeReply(1428)" href="/board/pol/res/1427.html#q1428">1428</a>
+                    </p>
+                    <div class="files">
+                        <div class="file">
+                            <p class="fileinfo">
+                                File: <a href="/board/pol/src/1766866958938.jpg">1766866958938.jpg</a>
+                                <span class="unimportant">
+                                    (201.15 KB, 850x1061, <span class="postfilename" title="sample_09d4fed40a5b04ef005d2539ef9dbfd611cbace8.jpg">sample_09d4fed40a5b04ef005….jpg</span>
+                                    )
+                                </span>
+                            </p>
+                            <a href="/board/pol/src/1766866958938.jpg" target="_blank">
+                                <img class="post-image" src="/board/pol/thumb/1766866958938.png" style="width:208px;height:260px" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <a onclick="highlightReply('1427', event);" href="/board/pol/res/1427.html#1427">&gt;&gt;1427</a>
+                        <br/>
+                        <span class="quote">&gt;Unironically using bluesky</span>
+                    </div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_1465">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1465" id="delete_1465"/>
+                        <label for="delete_1465">
+                            <span class="name">anon</span>
+                            <img class="flag flag-us" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="United&#x20;States" title="United&#x20;States">
+                            <time datetime="2026-06-12T01:07:29Z">12/06/26 (Fri) 01:07:29</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1465" onclick="highlightReply(1465)" href="/board/pol/res/1427.html#1465">No.</a>
+                        <a class="post_no" onclick="citeReply(1465)" href="/board/pol/res/1427.html#q1465">1465</a>
+                    </p>
+                    <div class="files"></div>
+                    <div class="body">
+                        <a onclick="highlightReply('1428', event);" href="/board/pol/res/1427.html#1428">&gt;&gt;1428</a>
+                        <br/>
+                        <span class="quote">&gt;I might bsky but my computers would melt, they're older than both people in that pic.</span>
+                        <br/>Evar since IME and a brief interview with Tannenbaum, that circuit board smells like a rainbow farting unicorn.
+                    </div>
+                </div>
+                <br/>
+                <br class="clear"/>
+                <hr/>
+            </div>
+            <div class="thread" id="thread_816" data-board="pol">
+                <div class="files">
+                    <div class="file">
+                        <p class="fileinfo">
+                            File: <a href="/board/pol/src/1666723309369.png">1666723309369.png</a>
+                            <span class="unimportant">
+                                (225.83 KB, 1837x1655, <span class="postfilename">220820211151054072.png</span>
+                                )
+                            </span>
+                        </p>
+                        <a href="/board/pol/src/1666723309369.png" target="_blank">
+                            <img class="post-image" src="/board/pol/thumb/1666723309369.png" style="width:260px;height:234px" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="post op" id="op_816">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_816" id="delete_816"/>
+                        <label for="delete_816">
+                            <span class="subject">Play in Old Map thread</span>
+                            <span class="name">anon</span>
+                            <time datetime="2022-10-25T18:41:49Z">25/10/22 (Tue) 18:41:49</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_816" onclick="highlightReply(816)" href="/board/pol/res/816.html#816">No.</a>
+                        <a class="post_no" onclick="citeReply(816)" href="/board/pol/res/816.html#q816">816</a>
+                        <a href="/board/pol/res/816.html">[Reply]</a>
+                    </p>
+                    <div class="body">How would you like to see this map? Offer all options!</div>
+                    <span class="omitted">23 posts and 19 image replies omitted. Click reply to view.</span>
+                </div>
+                <div class="post reply" id="reply_1353">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1353" id="delete_1353"/>
+                        <label for="delete_1353">
+                            <span class="name">anon</span>
+                            <img class="flag flag-us" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="United&#x20;States" title="United&#x20;States">
+                            <time datetime="2025-04-16T17:57:25Z">16/04/25 (Wed) 17:57:25</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1353" onclick="highlightReply(1353)" href="/board/pol/res/816.html#1353">No.</a>
+                        <a class="post_no" onclick="citeReply(1353)" href="/board/pol/res/816.html#q1353">1353</a>
+                    </p>
+                    <div class="files">
+                        <div class="file multifile" style="width:295px">
+                            <p class="fileinfo">
+                                File: <a href="/board/pol/src/1744826244269-0.png">1744826244269-0.png</a>
+                                <span class="unimportant">
+                                    (921.93 KB, 2715x2771, <span class="postfilename">current.png</span>
+                                    )
+                                </span>
+                            </p>
+                            <a href="/board/pol/src/1744826244269-0.png" target="_blank">
+                                <img class="post-image" src="/board/pol/thumb/1744826244269-0.png" style="width:255px;height:260px" alt=""/>
+                            </a>
+                        </div>
+                        <div class="file multifile" style="width:295px">
+                            <p class="fileinfo">
+                                File: <a href="/board/pol/src/1744826244269-1.png">1744826244269-1.png</a>
+                                <span class="unimportant">
+                                    (926.77 KB, 2715x2771, <span class="postfilename">map autism.png</span>
+                                    )
+                                </span>
+                            </p>
+                            <a href="/board/pol/src/1744826244269-1.png" target="_blank">
+                                <img class="post-image" src="/board/pol/thumb/1744826244269-1.png" style="width:255px;height:260px" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body" style="clear:both"></div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_1367">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1367" id="delete_1367"/>
+                        <label for="delete_1367">
+                            <span class="name">anon</span>
+                            <time datetime="2025-05-08T07:20:27Z">08/05/25 (Thu) 07:20:27</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1367" onclick="highlightReply(1367)" href="/board/pol/res/816.html#1367">No.</a>
+                        <a class="post_no" onclick="citeReply(1367)" href="/board/pol/res/816.html#q1367">1367</a>
+                    </p>
+                    <div class="files">
+                        <div class="file">
+                            <p class="fileinfo">
+                                File: <a href="/board/pol/src/1746688826914.png">1746688826914.png</a>
+                                <span class="unimportant">
+                                    (543.24 KB, 2100x1601, <span class="postfilename">1745571546118-0.png</span>
+                                    )
+                                </span>
+                            </p>
+                            <a href="/board/pol/src/1746688826914.png" target="_blank">
+                                <img class="post-image" src="/board/pol/thumb/1746688826914.png" style="width:260px;height:198px" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <a onclick="highlightReply('816', event);" href="/board/pol/res/816.html#816">&gt;&gt;816</a>
+                    </div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_1462">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1462" id="delete_1462"/>
+                        <label for="delete_1462">
+                            <span class="name">anon</span>
+                            <img class="flag flag-ua" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="Ukraine" title="Ukraine">
+                            <time datetime="2026-06-05T08:24:35Z">05/06/26 (Fri) 08:24:35</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1462" onclick="highlightReply(1462)" href="/board/pol/res/816.html#1462">No.</a>
+                        <a class="post_no" onclick="citeReply(1462)" href="/board/pol/res/816.html#q1462">1462</a>
+                    </p>
+                    <div class="files">
+                        <div class="file">
+                            <p class="fileinfo">
+                                File: <a href="/board/pol/src/1780647875200.png">1780647875200.png</a>
+                                <span class="unimportant">
+                                    (419.66 KB, 2100x1601, <span class="postfilename">Imperium.png</span>
+                                    )
+                                </span>
+                            </p>
+                            <a href="/board/pol/src/1780647875200.png" target="_blank">
+                                <img class="post-image" src="/board/pol/thumb/1780647875200.png" style="width:260px;height:198px" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body"></div>
+                </div>
+                <br/>
+                <br class="clear"/>
+                <hr/>
+            </div>
+            <div class="thread" id="thread_1461" data-board="pol">
+                <div class="files">
+                    <div class="file">
+                        <p class="fileinfo">
+                            File: <a href="/board/pol/src/1779694987393.png">1779694987393.png</a>
+                            <span class="unimportant">
+                                (375.9 KB, 433x600, <span class="postfilename" title="Primo_Champagne_Leg_Ham_100g.png">Primo_Champagne_Leg_Ham_10….png</span>
+                                )
+                            </span>
+                        </p>
+                        <a href="/board/pol/src/1779694987393.png" target="_blank">
+                            <img class="post-image" src="/board/pol/thumb/1779694987393.png" style="width:188px;height:260px" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="post op" id="op_1461">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1461" id="delete_1461"/>
+                        <label for="delete_1461">
+                            <a class="email" href="mailto:junk@antichristos.com">
+                                <span class="name">DY357-LX</span>
+                            </a>
+                            <img class="flag flag-au" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="Australia" title="Australia">
+                            <time datetime="2026-05-25T07:43:07Z">25/05/26 (Mon) 07:43:07</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1461" onclick="highlightReply(1461)" href="/board/pol/res/1461.html#1461">No.</a>
+                        <a class="post_no" onclick="citeReply(1461)" href="/board/pol/res/1461.html#q1461">1461</a>
+                        <a href="/board/pol/res/1461.html">[Reply]</a>
+                    </p>
+                    <div class="body">
+                        FULL MEDIA RELEASE: <a href="https://antichristos.com/#Disclosure_6" rel="nofollow" target="_blank">https://antichristos.com/#Disclosure_6</a>
+                        <br/>
+                        <br/>
+                        The HOLY BIBLE makes clear that during the Tribulation, those that follow the doctrines of DEMONS will command others to<br/>
+                        abstain from eating meats. The fact of the matter is we are well into the Tribulation, and it may be the case that certain Nations have already had their Satanic Intelligencia make moves to essentially restrict (if NOT outright prohibit) the eating of meat(s). I put meat(s) in plural for a reason, as I do believe that even during this period with restrictions/prohibition, meat will still be available for those who are in alignment with Jesus Christ AND/OR know where to purchase good meats, and what specific meat products are safe for consumption.<br/>
+                        <br/>
+                        Law Enforcement Officers which are in alignment with Jesus Christ, are no doubt in fact aware of this sinister plot.<br/>
+                        <br/>
+                        FULL MEDIA RELEASE AVAILABLE:<br/>
+                        <a href="https://antichristos.com/#Disclosure_6" rel="nofollow" target="_blank">https://antichristos.com/#Disclosure_6</a>
+                    </div>
+                </div>
+                <br class="clear"/>
+                <hr/>
+            </div>
+            <div class="thread" id="thread_1459" data-board="pol">
+                <div class="files">
+                    <div class="file">
+                        <p class="fileinfo">
+                            File: <a href="/board/pol/src/1779009401529.png">1779009401529.png</a>
+                            <span class="unimportant">
+                                (1.34 MB, 1682x949, <span class="postfilename" title="The_Simpsons_Season-9_Episode-4_Curious_George_And_The_Ebola_Virus.png">The_Simpsons_Season-9_Epis….png</span>
+                                )
+                            </span>
+                        </p>
+                        <a href="/board/pol/src/1779009401529.png" target="_blank">
+                            <img class="post-image" src="/board/pol/thumb/1779009401529.png" style="width:260px;height:147px" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="post op" id="op_1459">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1459" id="delete_1459"/>
+                        <label for="delete_1459">
+                            <span class="subject">WARNING: NEW VIRAL OUTBREAK</span>
+                            <a class="email" href="mailto:junk96@operationtrinity.com">
+                                <span class="name">DY357-LX</span>
+                            </a>
+                            <img class="flag flag-au" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="Australia" title="Australia">
+                            <time datetime="2026-05-17T09:16:41Z">17/05/26 (Sun) 09:16:41</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1459" onclick="highlightReply(1459)" href="/board/pol/res/1459.html#1459">No.</a>
+                        <a class="post_no" onclick="citeReply(1459)" href="/board/pol/res/1459.html#q1459">1459</a>
+                        <a href="/board/pol/res/1459.html">[Reply]</a>
+                    </p>
+                    <div class="body">
+                        FULL MEDIA RELEASE ON WEBSITE<br/>
+                        ALT_SERVER: <a href="https://Antichristos.org" rel="nofollow" target="_blank">https://Antichristos.org</a>
+                        <br/>
+                        MAIN_SERVER: <a href="https://Antichristos.com" rel="nofollow" target="_blank">https://Antichristos.com</a>
+                        (I am currently being BLOCKED from Upload).<br/>
+                        <br/>
+                        Herein I predict a Serious Viral Outbreak AND/OR Global Plague IN OR BEFORE 2029.<br/>
+                        <br/>
+                        <br/>
+                        Media presented in popular culture does from time to time have MILITARY_INTELLIGENCE_CODE in it.<br/>
+                        Some of this MILITARY INTELLIGENCE CODE has essentially predicted future events prior to them happening.<br/>
+                        One of the most well known examples of this is from The Simpsons Season 9, Episode 1.<br/>
+                        Wherein Homer Simpson gets his car wheel-clamped for being illegally parked at the World Trade Center Plaza.<br/>
+                        <br/>
+                        And Lisa holds up a magazine with an advertisement that displays the following:<br/>
+                        <br/>
+                        This was in FACT MILITARY_INTELLIGENCE_CODE which predicted 9/11 (September 11th, Attack on The World Trade Center).<br/>
+                        <span class="toolong">
+                            Post too long. Click <a href="/board/pol/res/1459.html#1459">here</a>
+                            to view the full text.
+                        </span>
+                    </div>
+                </div>
+                <div class="post reply" id="reply_1460">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1460" id="delete_1460"/>
+                        <label for="delete_1460">
+                            <span class="name">anon</span>
+                            <img class="flag flag-us" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="United&#x20;States" title="United&#x20;States">
+                            <time datetime="2026-05-21T02:22:31Z">21/05/26 (Thu) 02:22:31</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1460" onclick="highlightReply(1460)" href="/board/pol/res/1459.html#1460">No.</a>
+                        <a class="post_no" onclick="citeReply(1460)" href="/board/pol/res/1459.html#q1460">1460</a>
+                    </p>
+                    <div class="files">
+                        <div class="file">
+                            <p class="fileinfo">
+                                File: <a href="/board/pol/src/1779330151274.jpg">1779330151274.jpg</a>
+                                <span class="unimportant">
+                                    (863.67 KB, 800x3020, <span class="postfilename">novaxx5.jpg</span>
+                                    )
+                                </span>
+                            </p>
+                            <a href="/board/pol/src/1779330151274.jpg" target="_blank">
+                                <img class="post-image" src="/board/pol/thumb/1779330151274.png" style="width:69px;height:260px" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <a onclick="highlightReply('1459', event);" href="/board/pol/res/1459.html#1459">&gt;&gt;1459</a>
+                        <br/>DEATH JABBERS FOR GLOBOHOMO
+                    </div>
+                </div>
+                <br/>
+                <br class="clear"/>
+                <hr/>
+            </div>
+            <div class="thread" id="thread_1458" data-board="pol">
+                <div class="files">
+                    <div class="file">
+                        <p class="fileinfo">
+                            File: <a href="/board/pol/src/1778638531078.png">1778638531078.png</a>
+                            <span class="unimportant">
+                                (391.68 KB, 1436x1436, <span class="postfilename" title="Seal_of_the_U.S._National_Security_Agency.png">Seal_of_the_U.S._National_….png</span>
+                                )
+                            </span>
+                        </p>
+                        <a href="/board/pol/src/1778638531078.png" target="_blank">
+                            <img class="post-image" src="/board/pol/thumb/1778638531078.png" style="width:260px;height:260px" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="post op" id="op_1458">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1458" id="delete_1458"/>
+                        <label for="delete_1458">
+                            <span class="subject">Antichristos Shrine -&gt;Mundaring Weir[d]</span>
+                            <a class="email" href="mailto:junk96@operationtrinity.com">
+                                <span class="name">DY357-LX</span>
+                            </a>
+                            <img class="flag flag-gb" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="United&#x20;Kingdom" title="United&#x20;Kingdom">
+                            <time datetime="2026-05-13T02:15:31Z">13/05/26 (Wed) 02:15:31</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1458" onclick="highlightReply(1458)" href="/board/pol/res/1458.html#1458">No.</a>
+                        <a class="post_no" onclick="citeReply(1458)" href="/board/pol/res/1458.html#q1458">1458</a>
+                        <a href="/board/pol/res/1458.html">[Reply]</a>
+                    </p>
+                    <div class="body">
+                        [UPDATED: 12/05/2026]<br/>
+                        <br/>
+                        On 06/05/2026 (6th of March 2026) an event of extreme significance occurred.<br/>
+                        Unknown to many individuals, as information relating to this has a security classification of TOP SECRET or ABOVE TOP SECRET (NOW: DECLASSIFIED). <br/>
+                        There is a DUMB (Deep Underground Military Base) at or near the Mundaring Weir.<br/>
+                        The Mundaring Weir is located in Western Australia, This Military Base is in fact a Temple AND/OR Religious Shrine for a key figure head of MILITARY INTELLIGENCE SIX.<br/>
+                        This individual has identified as the Biblical Antichrist (Greek: Antichristos).<br/>
+                        <br/>
+                        This Military Base was attacked with a Cold Fusion Nuclear Technology Device by United States Military DELTA [DELTA]<br/>
+                        on 06-05-2026.<br/>
+                        This attack was telegraphed before hand in MILITARY_INTELLIGENCE_CODE by information published by DY357-LX <br/>
+                        on the OPERATION_TRINITY website: <a href="https://OperationTrinity.com" rel="nofollow" target="_blank">https://OperationTrinity.com</a>
+                        which was officially launched on: 2024-06-01.<br/>
+                        <br/>
+                        It WAS/IS believed that this attacked killed this individual that signalled that they were [indeed] ANTICHRISTOS.<br/>
+                        <br/>
+                        <span class="toolong">
+                            Post too long. Click <a href="/board/pol/res/1458.html#1458">here</a>
+                            to view the full text.
+                        </span>
+                    </div>
+                </div>
+                <br class="clear"/>
+                <hr/>
+            </div>
+            <div class="thread" id="thread_1329" data-board="pol">
+                <div class="files">
+                    <div class="file">
+                        <p class="fileinfo">
+                            File: <a href="/board/pol/src/1739061969098.png">1739061969098.png</a>
+                            <span class="unimportant">
+                                (2.15 KB, 220x220, <span class="postfilename">download.png</span>
+                                )
+                            </span>
+                        </p>
+                        <a href="/board/pol/src/1739061969098.png" target="_blank">
+                            <img class="post-image" src="/board/pol/thumb/1739061969098.png" style="width:220px;height:220px" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="post op" id="op_1329">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1329" id="delete_1329"/>
+                        <label for="delete_1329">
+                            <span class="subject">neo nazi</span>
+                            <span class="name">anon</span>
+                            <time datetime="2025-02-09T00:46:09Z">09/02/25 (Sun) 00:46:09</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1329" onclick="highlightReply(1329)" href="/board/pol/res/1329.html#1329">No.</a>
+                        <a class="post_no" onclick="citeReply(1329)" href="/board/pol/res/1329.html#q1329">1329</a>
+                        <a href="/board/pol/res/1329.html">[Reply]</a>
+                    </p>
+                    <div class="body">I'm a neo nazi ask me anything</div>
+                </div>
+                <div class="post reply" id="reply_1330">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1330" id="delete_1330"/>
+                        <label for="delete_1330">
+                            <span class="name">Neo</span>
+                            <img class="flag flag-us" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="United&#x20;States" title="United&#x20;States">
+                            <time datetime="2025-02-09T21:52:39Z">09/02/25 (Sun) 21:52:39</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1330" onclick="highlightReply(1330)" href="/board/pol/res/1329.html#1330">No.</a>
+                        <a class="post_no" onclick="citeReply(1330)" href="/board/pol/res/1329.html#q1330">1330</a>
+                    </p>
+                    <div class="files">
+                        <div class="file">
+                            <p class="fileinfo">
+                                File: <a href="/board/pol/src/1739137958913.jpg">1739137958913.jpg</a>
+                                <span class="unimportant">
+                                    (22.23 KB, 250x358, <span class="postfilename">NeoTheMatrix.jpg</span>
+                                    )
+                                </span>
+                            </p>
+                            <a href="/board/pol/src/1739137958913.jpg" target="_blank">
+                                <img class="post-image" src="/board/pol/thumb/1739137958913.png" style="width:182px;height:260px" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body">Why are you using my name, punk?</div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_1456">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1456" id="delete_1456"/>
+                        <label for="delete_1456">
+                            <span class="name">anon</span>
+                            <img class="flag flag-us" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="United&#x20;States" title="United&#x20;States">
+                            <time datetime="2026-04-21T02:24:29Z">21/04/26 (Tue) 02:24:29</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1456" onclick="highlightReply(1456)" href="/board/pol/res/1329.html#1456">No.</a>
+                        <a class="post_no" onclick="citeReply(1456)" href="/board/pol/res/1329.html#q1456">1456</a>
+                    </p>
+                    <div class="files"></div>
+                    <div class="body">
+                        <a onclick="highlightReply('1330', event);" href="/board/pol/res/1329.html#1330">&gt;&gt;1330</a>
+                        <br/>Kek
+                    </div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_1457">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1457" id="delete_1457"/>
+                        <label for="delete_1457">
+                            <span class="name">anon</span>
+                            <img class="flag flag-us" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="United&#x20;States" title="United&#x20;States">
+                            <time datetime="2026-05-10T20:14:51Z">10/05/26 (Sun) 20:14:51</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1457" onclick="highlightReply(1457)" href="/board/pol/res/1329.html#1457">No.</a>
+                        <a class="post_no" onclick="citeReply(1457)" href="/board/pol/res/1329.html#q1457">1457</a>
+                    </p>
+                    <div class="files">
+                        <div class="file">
+                            <p class="fileinfo">
+                                File: <a href="/board/pol/src/1778444088815.jpg">1778444088815.jpg</a>
+                                <span class="unimportant">
+                                    (3.67 MB, 3600x9300, <span class="postfilename">nazi8.jpg</span>
+                                    )
+                                </span>
+                            </p>
+                            <a href="/board/pol/src/1778444088815.jpg" target="_blank">
+                                <img class="post-image" src="/board/pol/thumb/1778444088815.png" style="width:101px;height:260px" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <a onclick="highlightReply('1329', event);" href="/board/pol/res/1329.html#1329">&gt;&gt;1329</a>
+                        <br/>infographic
+                    </div>
+                </div>
+                <br/>
+                <br class="clear"/>
+                <hr/>
+            </div>
+            <div class="thread" id="thread_1455" data-board="pol">
+                <div class="files">
+                    <div class="file multifile" style="width:195px">
+                        <p class="fileinfo">
+                            File: <a href="/board/pol/src/1774478888771-0.jpg">1774478888771-0.jpg</a>
+                            <span class="unimportant">
+                                (420.44 KB, 1080x1812, <span class="postfilename" title="Screenshot_20260325_192938_X.jpg">Screenshot_20260325_192938….jpg</span>
+                                )
+                            </span>
+                        </p>
+                        <a href="/board/pol/src/1774478888771-0.jpg" target="_blank">
+                            <img class="post-image" src="/board/pol/thumb/1774478888771-0.png" style="width:155px;height:260px" alt=""/>
+                        </a>
+                    </div>
+                    <div class="file multifile" style="width:187px">
+                        <p class="fileinfo">
+                            File: <a href="/board/pol/src/1774478888771-1.jpg">1774478888771-1.jpg</a>
+                            <span class="unimportant">
+                                (829.67 KB, 1080x1913, <span class="postfilename" title="Screenshot_20260325_192957_X.jpg">Screenshot_20260325_192957….jpg</span>
+                                )
+                            </span>
+                        </p>
+                        <a href="/board/pol/src/1774478888771-1.jpg" target="_blank">
+                            <img class="post-image" src="/board/pol/thumb/1774478888771-1.png" style="width:147px;height:260px" alt=""/>
+                        </a>
+                    </div>
+                    <div class="file multifile" style="width:300px">
+                        <p class="fileinfo">
+                            File: <a href="/board/pol/src/1774478888771-2.jpg">1774478888771-2.jpg</a>
+                            <span class="unimportant">
+                                (141.57 KB, 1080x722, <span class="postfilename" title="Screenshot_20260325_193014_X.jpg">Screenshot_20260325_193014….jpg</span>
+                                )
+                            </span>
+                        </p>
+                        <a href="/board/pol/src/1774478888771-2.jpg" target="_blank">
+                            <img class="post-image" src="/board/pol/thumb/1774478888771-2.png" style="width:260px;height:174px" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="post op" id="op_1455" style='clear:both'>
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1455" id="delete_1455"/>
+                        <label for="delete_1455">
+                            <span class="name">anon</span>
+                            <img class="flag flag-fr" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="France" title="France">
+                            <time datetime="2026-03-25T22:48:09Z">25/03/26 (Wed) 22:48:09</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1455" onclick="highlightReply(1455)" href="/board/pol/res/1455.html#1455">No.</a>
+                        <a class="post_no" onclick="citeReply(1455)" href="/board/pol/res/1455.html#q1455">1455</a>
+                        <a href="/board/pol/res/1455.html">[Reply]</a>
+                    </p>
+                    <div class="body">
+                        <a href="https://x.com/i/status/2036930414946762887" rel="nofollow" target="_blank">https://x.com/i/status/2036930414946762887</a>
+                        <br/>WTF??????
+                    </div>
+                </div>
+                <br class="clear"/>
+                <hr/>
+            </div>
+            <div class="thread" id="thread_1452" data-board="pol">
+                <div class="files">
+                    <div class="file">
+                        <p class="fileinfo">
+                            File: <a href="/board/pol/src/1773654450847.jpg">1773654450847.jpg</a>
+                            <span class="unimportant">
+                                (2.88 MB, 4500x6000, <span class="postfilename">rw3.jpg</span>
+                                )
+                            </span>
+                        </p>
+                        <a href="/board/pol/src/1773654450847.jpg" target="_blank">
+                            <img class="post-image" src="/board/pol/thumb/1773654450847.png" style="width:195px;height:260px" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="post op" id="op_1452">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1452" id="delete_1452"/>
+                        <label for="delete_1452">
+                            <span class="subject">RIGHT WING BASICS</span>
+                            <span class="name">anon</span>
+                            <img class="flag flag-us" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="United&#x20;States" title="United&#x20;States">
+                            <time datetime="2026-03-16T09:47:32Z">16/03/26 (Mon) 09:47:32</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1452" onclick="highlightReply(1452)" href="/board/pol/res/1452.html#1452">No.</a>
+                        <a class="post_no" onclick="citeReply(1452)" href="/board/pol/res/1452.html#q1452">1452</a>
+                        <a href="/board/pol/res/1452.html">[Reply]</a>
+                    </p>
+                    <div class="body">
+                        RIGHT WING BASICS<br/>
+                        <a href="http://drive.google.com/drive/folders/1pi20Rr9_BxBbMIfcZUTTGslfZTifEiCm" rel="nofollow" target="_blank">http://drive.google.com/drive/folders/1pi20Rr9_BxBbMIfcZUTTGslfZTifEiCm</a>
+                        <br/>
+                        google drive easy to use interface<br/>download the whole blob or pick and choose
+                    </div>
+                </div>
+                <div class="post reply" id="reply_1453">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_1453" id="delete_1453"/>
+                        <label for="delete_1453">
+                            <span class="name">anon</span>
+                            <img class="flag flag-us" src="/board/static/blank.gif" style="width:16px;height:11px;" alt="United&#x20;States" title="United&#x20;States">
+                            <time datetime="2026-03-16T09:53:00Z">16/03/26 (Mon) 09:53:00</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_1453" onclick="highlightReply(1453)" href="/board/pol/res/1452.html#1453">No.</a>
+                        <a class="post_no" onclick="citeReply(1453)" href="/board/pol/res/1452.html#q1453">1453</a>
+                    </p>
+                    <div class="files">
+                        <div class="file">
+                            <p class="fileinfo">
+                                File: <a href="/board/pol/src/1773654777751.jpg">1773654777751.jpg</a>
+                                <span class="unimportant">
+                                    (3.69 MB, 5000x9900, <span class="postfilename">books1.jpg</span>
+                                    )
+                                </span>
+                            </p>
+                            <a href="/board/pol/src/1773654777751.jpg" target="_blank">
+                                <img class="post-image" src="/board/pol/thumb/1773654777751.png" style="width:131px;height:260px" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <a onclick="highlightReply('1452', event);" href="/board/pol/res/1452.html#1452">&gt;&gt;1452</a>
+                        <br/>book charts
+                    </div>
+                </div>
+                <br/>
+                <br class="clear"/>
+                <hr/>
+            </div>
+            <div id="post-moderation-fields">
+                <div id="delete-fields">
+                    Delete Post [<input title="Delete file only" type="checkbox" name="file" id="delete_file"/>
+                    <label for="delete_file">File</label>
+                    ] <label for="password">Password</label>
+                    <input id="password" type="password" name="password" size="12" maxlength="18"/>
+                    <input type="submit" name="delete" value="Delete"/>
+                </div>
+                <div id="report-fields">
+                    <label for="reason">Reason</label>
+                    <input id="reason" type="text" name="reason" size="20" maxlength="30"/>
+                    <input type="submit" name="report" value="Report"/>
+                </div>
+            </div>
+        </form>
+        <div class="pages">
+            Previous  [<a class="selected">1</a>
+            ] [<a href="/board/pol/2.html">2</a>
+            ] [<a href="/board/pol/3.html">3</a>
+            ] [<a href="/board/pol/4.html">4</a>
+            ] [<a href="/board/pol/5.html">5</a>
+            ] [<a href="/board/pol/6.html">6</a>
+            ] [<a href="/board/pol/7.html">7</a>
+            ] [<a href="/board/pol/8.html">8</a>
+            ] [<a href="/board/pol/9.html">9</a>
+            ] [<a href="/board/pol/10.html">10</a>
+            ] [<a href="/board/pol/11.html">11</a>
+            ] [<a href="/board/pol/12.html">12</a>
+            ] [<a href="/board/pol/13.html">13</a>
+            ] [<a href="/board/pol/14.html">14</a>
+            ] [<a href="/board/pol/15.html">15</a>
+            ] [<a href="/board/pol/16.html">16</a>
+            ] [<a href="/board/pol/17.html">17</a>
+            ]  
+            <form action="/board/pol/2.html" method="get">
+                <input type="submit" value="Next"/>
+            </form>
+            | <a href="/board/pol/catalog.html">Catalog</a>
+        </div>
+        <div class="boardlist bottom">
+            <span class="sub" data-description="0">
+                [ <a href="/board/">home</a>
+                ]
+            </span>
+            <span class="sub" data-description="1">
+                [ <a href="/board/o/index.html" title="Auto">o</a>
+                / <a href="/board/g/index.html" title="Technology">g</a>
+                / <a href="/board/v/index.html" title="Video Games">v</a>
+                / <a href="/board/a/index.html" title="Anime">a</a>
+                / <a href="/board/mlp/index.html" title="Pony">mlp</a>
+                ]
+            </span>
+            <span class="sub" data-description="2">
+                [ <a href="/board/art/index.html" title="Arts">art</a>
+                / <a href="/board/mu/index.html" title="Music">mu</a>
+                / <a href="/board/w/index.html" title="Wallpapers">w</a>
+                / <a href="/board/fa/index.html" title="Fashion">fa</a>
+                / <a href="/board/wr/index.html" title="Writing">wr</a>
+                ]
+            </span>
+            <span class="sub" data-description="3">
+                [ <a href="/board/en/index.html" title="General">en</a>
+                / <a href="/board/p/index.html" title="Português">p</a>
+                / <a href="/board/s/index.html" title="Español">s</a>
+                / <a href="/board/m/index.html" title="Meta">m</a>
+                ]
+            </span>
+            <span class="sub" data-description="4">
+                [ <a href="/board/b/index.html" title="Random">b</a>
+                / <a href="/board/t/index.html" title="Torrents">t</a>
+                / <a href="/board/pol/index.html" title="Politics and News">pol</a>
+                ]
+            </span>
+            <span class="sub" data-description="5">
+                [ <a href="/board/all/index.html">all</a>
+                ]
+            </span>
+            <span class="sub" data-description="6">
+                [ <a href="/board/rules.html">rules</a>
+                / <a href="/board/news.html">news</a>
+                / <a href="/board/contact.html">contact</a>
+                / <a href="/board/about.html">about</a>
+                / <a href="/board/donate.html">donate</a>
+                ]
+            </span>
+        </div>
+        <!--  -->
+        <footer>
+            <p class="unimportant" style="margin-top:20px;text-align:center;">
+                - <a href="http://tinyboard.org/">Tinyboard</a>
+                +                        <a href='https://int.vichan.net/devel/'>vichan</a>
+                4.5.2 -                <br>
+                <a href="http://tinyboard.org/">Tinyboard</a>
+                Copyright &copy;2010-2014 Tinyboard Development Group                <br>
+                <a href="https://int.vichan.net/devel/">vichan</a>
+                Copyright &copy;2012-2014 vichan-devel
+            </p>
+            <p class="unimportant" style="text-align:center;">All trademarks, copyrights, comments, and images on this page are owned by and are the responsibility of their respective parties.</p>
+        </footer>
+        <script type="text/javascript">
+            ready();
+        </script>
+    </body>
+</html>

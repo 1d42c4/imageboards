@@ -1,0 +1,72 @@
+{% apply spaceless %}
+{# tabs and new lines will be ignored #}
+
+<div class="thread" id="thread_{{ post.id }}" data-board="{{ board.uri }}">
+{% if not index %}<a id="{{ post.id }}" class="post_anchor"></a>{% endif %}
+
+{% endapply %}
+{% include 'post/fileinfo.html' %}
+<div class="post op" id="op_{{ post.id }}" {%if post.num_files > 1%}style='clear:both'{%endif%}><p class="intro">
+	<input type="checkbox" class="delete" name="delete_{{ post.id }}" id="delete_{{ post.id }}" />
+	<label for="delete_{{ post.id }}">
+		
+		{% include 'post/subject.html' %}
+		{% include 'post/name.html' %}
+		{% include 'post/ip.html' %}
+		{% include 'post/flag.html' %}
+		{% include 'post/time.html' %}
+	</label>
+	{% apply spaceless %}
+	{% include 'post/poster_id.html' %}&nbsp;
+	<a class="post_no" id="post_no_{{ post.id }}" onclick="highlightReply({{ post.id }})" href="{{ post.link }}">No.</a>
+	<a class="post_no" onclick="citeReply({{ post.id }})" href="{{ post.link('q') }}">{{ post.id }}</a>
+	{% if post.sticky %}
+		<img class="icon" title="Sticky" src="{{ config.image_sticky }}" alt="Sticky" />
+	{% endif %}
+	{% if post.locked %}
+		<img class="icon" title="Locked" src="{{ config.image_locked }}" alt="Locked" />
+	{% endif %}
+	{% if post.sage and (config.mod.view_bumplock < 0 or (post.mod and post.mod|hasPermission(config.mod.view_bumplock, board.uri))) %}
+		<img class="icon" title="Bumplocked" src="{{ config.image_bumplocked }}" alt="Bumplocked" />
+	{% endif %}
+	{% if index %}
+		<a href="{{ post.root }}{{ board.dir }}{{ config.dir.res }}{{ link_for(post) }}">[{% trans %}Reply{% endtrans %}]</a>
+	{% endif %}
+	{% include 'post/post_controls.html' %}
+	</p>
+	<div class="body">
+		{% endapply %}{% if index %}{{ post.body|truncate_body(post.link) }}{% else %}{{ post.body }}{% endif %}{% apply spaceless %}
+		{% if post.modifiers['ban message'] %}
+			{{ config.mod.ban_message|sprintf(post.modifiers['ban message']) }}
+		{% endif %}
+	</div>
+	{% if post.omitted or post.omitted_images %}
+		<span class="omitted">
+			{% if post.omitted %}
+				{% trans %}
+					1 post
+				{% plural post.omitted %}
+					{{ count }} posts
+				{% endtrans %}
+				{% if post.omitted_images %}
+					 {% trans %}and{% endtrans %} 
+				{% endif %}
+			{% endif %}
+			{% if post.omitted_images %}
+				{% trans %}
+					1 image reply
+				{% plural post.omitted_images %}
+					{{ count }} image replies
+				{% endtrans %}
+			{% endif %} {% trans %}omitted. Click reply to view.{% endtrans %}
+		</span>
+	{% endif %}
+{% if not index %}
+{% endif %}
+</div>{% endapply %}
+{% set hr = post.hr %}
+{% for post in post.posts %}
+	{% include 'post_reply.html' %}
+{% endfor %}
+<br class="clear"/>{% if hr %}<hr/>{% endif %}
+</div>

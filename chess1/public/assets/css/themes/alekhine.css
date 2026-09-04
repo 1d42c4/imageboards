@@ -1,0 +1,40 @@
+/* Alekhine
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: light; /* Browser color scheme. */
+    --theme-bg: #edf0f3; /* Page background color. */
+    --theme-bg-image: repeating-linear-gradient(90deg, transparent 0 39px, rgba(120,150,180,.035) 39px 40px); /* Optional page gradient or image. */
+    --theme-text: #17202a; /* Main text. */
+    --theme-link: #334f6b; /* Links and secondary actions. */
+    --theme-hover: #983645; /* Hovered links. */
+    --theme-muted: #606c77; /* Quiet metadata. */
+    --theme-nav: #606c77; /* Board navigation. */
+    --theme-heading: #78313a; /* Board and page headings. */
+    --theme-panel: #d8dee4; /* Reply boxes and utility panels. */
+    --theme-border: #aab5c0; /* Main borders. */
+    --theme-line: #aab5c0; /* Subtle separators. */
+    --theme-surface: #fbfcfd; /* Raised content surfaces. */
+    --theme-accent: #899bac; /* Section title bars. */
+    --theme-accent-text: #000000; /* Text on accent bars. */
+    --theme-input: #ffffff; /* Input background. */
+    --theme-input-border: #aab5c0; /* Input borders. */
+    --theme-subject: #344b63; /* Post subjects. */
+    --theme-name: #286d51; /* Poster names. */
+    --theme-quote: #5d771f; /* Greentext. */
+    --theme-button: #d8dee4; /* Button face. */
+    --theme-button-border: #aab5c0; /* Button border. */
+    --theme-button-hover: #899bac; /* Hovered button. */
+    --theme-card-hover: #899bac; /* Hovered cards. */
+    --theme-pgn: #fbfcfd; /* PGN block background. */
+    --theme-pgn-border: #899bac; /* PGN accent border. */
+    --theme-font: ui-monospace, Consolas, monospace; /* Site font stack. */
+    --theme-heading-font: ui-monospace, Consolas, monospace; /* Heading font stack. */
+    --theme-heading-letter-spacing: -.04em; /* Heading spacing. */
+    --theme-radius: 2px; /* General corner radius. */
+    --theme-reply-radius: 2px; /* Reply corner radius. */
+    --theme-control-radius: 2px; /* Form and button radius. */
+    --theme-reply-border-width: 1px 1px 1px 4px; /* Reply border widths. */
+}

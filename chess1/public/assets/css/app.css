@@ -1,0 +1,16 @@
+/*
+ * Chessboard Lite CSS manifest.
+ *
+ * Keep this file small. Feature CSS lives in the neighboring modules, and
+ * each selectable palette lives in themes/<theme-name>.css.
+ */
+@import url("./foundation.css");
+@import url("./content.css");
+@import url("./forms.css");
+@import url("./posts.css");
+@import url("./controls.css");
+@import url("./moderator.css");
+@import url("./setup.css");
+@import url("./responsive.css");
+@import url("./preferences.css");
+@import url("./theme-engine.css");

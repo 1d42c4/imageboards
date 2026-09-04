@@ -1,0 +1,667 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            var active_page = "thread"
+              , board_name = "m"
+              , thread_id = "564";
+        </script>
+        <link rel="stylesheet" media="screen" href="/board/stylesheets/style.css">
+        <link rel="shortcut icon" href="/board/favicon.ico">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="/board/stylesheets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/board/static/flags/flags.css">
+        <script type="text/javascript">
+            var configRoot = "/board/";
+            var inMod = false;
+            var modRoot = "/board/" + (inMod ? "mod.php?/" : "");
+        </script>
+        <script type="text/javascript" src="/board/main.js"></script>
+        <script type="text/javascript" src="/board/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/board/js/inline-expanding.js"></script>
+        <script type="text/javascript" src="/board/js/multi-image.js"></script>
+        <script type="text/javascript" src="/board/js/webm-settings.js"></script>
+        <script type="text/javascript" src="/board/js/expand-video.js"></script>
+        <script type="text/javascript" src="/board/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/board/js/jquery-ui.custom.min.js"></script>
+        <script type="text/javascript" src="/board/js/style-select.js"></script>
+        <script type="text/javascript" src="/board/js/quick-reply.js"></script>
+        <script type="text/javascript" src="/board/js/post-hover.js"></script>
+        <script type="text/javascript" src="/board/js/show-backlinks.js"></script>
+        <script type="text/javascript" src="/board/js/auto-reload.js"></script>
+        <script type="text/javascript" src="/board/js/hide-images.js"></script>
+        <script type="text/javascript" src="/board/js/hide-threads.js"></script>
+        <script type="text/javascript" src="/board/js/strftime.min.js"></script>
+        <script type="text/javascript" src="/board/js/local-time.js"></script>
+        <meta name="description" content="/m/ - Meta - 28chan &amp;gt; *chan ep 2"/>
+        <meta name="twitter:card" value="summary">
+        <meta property="og:title" content="28chan &amp;gt; *chan ep 2"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:url" content="https://www.28chan.org/m/res/564.html"/>
+        <meta property="og:image" content="https://www.28chan.org/m/thumb/1673544204642.png"/>
+        <meta property="og:description" content="Hey all, I thought it&#039;d be best to make a new thread about 28chan&#039;s development and such, since pvnfu isn&#039;t running the site anymore. (To see more, check the news page)You all have to put up with me now :troll:This is mostly just a clarity thing, everything mentioned on &gt;&gt;1 still applies.(Except improvements, and bugs.)What happened so far:- I&#039;ve set up the site, and am waiting for the ssl stuff to go trough so we can finally be official again.- Added an overboard &gt;&gt;&gt;/all/- New board &gt;&gt;&gt;/wr/- Changed the contents of the contacts page.Plans for the future:- Change up the rules a bit, to keep what made the place so great to begin with. If you&#039;ve been here before, you might have seen my opinion on how it should be changed, but it&#039;s still being discussed. (Suggestions are welcome)- Edit the boardlist, add the non-boards, move /All/ to it&#039;s own category - Remove the fashion board- Add the banners that haven&#039;t been added yetMore to come..."/>
+        <title>/m/ - 28chan &amp;gt; *chan ep 2</title>
+    </head>
+    <body class="8chan vichan is-not-moderator active-thread" data-stylesheet="default">
+        <div class="boardlist">
+            <span class="sub" data-description="0">
+                [ <a href="/board/">home</a>
+                ]
+            </span>
+            <span class="sub" data-description="1">
+                [ <a href="/board/o/index.html" title="Auto">o</a>
+                / <a href="/board/g/index.html" title="Technology">g</a>
+                / <a href="/board/v/index.html" title="Video Games">v</a>
+                / <a href="/board/a/index.html" title="Anime">a</a>
+                ]
+            </span>
+            <span class="sub" data-description="2">
+                [ <a href="/board/art/index.html" title="Arts">art</a>
+                / <a href="/board/mu/index.html" title="Music">mu</a>
+                / <a href="/board/w/index.html" title="Wallpapers">w</a>
+                / <a href="/board/fa/index.html" title="Fashion">fa</a>
+                / <a href="/board/wr/index.html" title="Writing">wr</a>
+                ]
+            </span>
+            <span class="sub" data-description="3">
+                [ <a href="/board/en/index.html" title="General">en</a>
+                / <a href="/board/p/index.html" title="Português">p</a>
+                / <a href="/board/s/index.html" title="Español">s</a>
+                / <a href="/board/m/index.html" title="Meta">m</a>
+                ]
+            </span>
+            <span class="sub" data-description="4">
+                [ <a href="/board/b/index.html" title="Random">b</a>
+                / <a href="/board/t/index.html" title="Torrents">t</a>
+                / <a href="/board/pol/index.html" title="Politics and News">pol</a>
+                ]
+            </span>
+            <span class="sub" data-description="5">
+                [ <a href="/board/all/index.html">all</a>
+                ]
+            </span>
+            <span class="sub" data-description="6">
+                [ <a href="/board/rules.html">rules</a>
+                / <a href="/board/news.html">news</a>
+                / <a href="/board/contact.html">contact</a>
+                / <a href="/board/about.html">about</a>
+                / <a href="/board/donate.html">donate</a>
+                ]
+            </span>
+        </div>
+        <script type='text/javascript'>
+            if (typeof do_boardlist != 'undefined')
+                do_boardlist();
+        </script>
+        <a name="top"></a>
+        <header>
+            <h1>/m/ - Meta</h1>
+            <div class="subtitle"></div>
+        </header>
+        <div class="banner">
+            Posting mode: Reply <a class="unimportant" href="/board/m/index.html">[Return]</a>
+            <a class="unimportant" href="#bottom">[Go to bottom]</a>
+        </div>
+        <!--  -->
+        <form name="post" onsubmit="return dopost(this);" enctype="multipart/form-data" action="/board/post.php" method="post">
+            <input style="display:none" type="text" name="lastname" value="9=$a{u\(⛸;g}c&amp;1&gt;JXe'♶Enl. hByq,AkHQ]3vzr⛘iZ)8Gfj%+`_7-/b#I|⛩m&lt;SV[R!wC5W⛕♶@UFt?0♡~T4P^Ko*N♁♠Dpd ⚼xMY">
+            <input type="hidden" name="thread" value="564">
+            <input style="display:none" type="text" name="6q3ystl2zie☽maog" value="">
+            <input type="hidden" name="board" value="m">
+            <div style="display:none">
+                <input type="text" name="login" value="ZF3♑oUCn⛼'=,⛧+vA!.7&lt;J{Q}l\RV[&gt;u^k8O9cq`tprsI6-wK|gj/a♋e#Y♺;y&amp;♓*G b?~ ⛒dM♔0B]D2%">
+            </div>
+            <table>
+                <tr>
+                    <th>
+                        Name
+                        <div style="display:none">
+                            <input type="text" name="srjz2ob80i1k6gh3dx♰u9ptcw" value="54772">
+                        </div>
+                    </th>
+                    <td>
+                        <input type="text" name="name" size="25" maxlength="35" autocomplete="off">
+                        <textarea name="h7uoditblk2fxqgcn⚥8evm0ra" style="display:none">2☋UE]%</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>
+                        <input type="text" name="email" size="25" maxlength="40" autocomplete="off">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Subject</th>
+                    <td>
+                        <input style="float:left;" type="text" name="subject" size="25" maxlength="100" autocomplete="off">
+                        <input accesskey="s" style="margin-left:2px;" type="submit" name="post" value="New Reply"/>
+                        <input id="spoiler" name="spoiler" type="checkbox">
+                        <label for="spoiler">Spoiler Image</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Comment</th>
+                    <td>
+                        <textarea name="body" id="body" rows="5" cols="35"></textarea>
+                    </td>
+                </tr>
+                <tr id="upload">
+                    <th>File</th>
+                    <td>
+                        <input type="file" name="file" id="upload_file">
+                        <script type="text/javascript">
+                            if (typeof init_file_selector !== 'undefined')
+                                init_file_selector(3);
+                        </script>
+                    </td>
+                </tr>
+                <tr id="upload_embed">
+                    <th>Embed</th>
+                    <td>
+                        <input type="text" name="embed" value="" size="30" maxlength="120" autocomplete="off">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td>
+                        <input type="text" name="password" value="" size="12" maxlength="18" autocomplete="off">
+                        <span class="unimportant">(For file deletion.)</span>
+                    </td>
+                </tr>
+            </table>
+            <input type="hidden" name="hash" value="bb599434105136abed170787cbbd6c02c6883326">
+        </form>
+        <script type="text/javascript">
+            rememberStuff();
+        </script>
+        <hr/>
+        <form name="postcontrols" action="/board/post.php" method="post">
+            <input type="hidden" name="board" value="m"/>
+            <div class="thread" id="thread_564" data-board="m">
+                <a id="564" class="post_anchor"></a>
+                <div class="files">
+                    <div class="file">
+                        <p class="fileinfo">
+                            File: <a href="/board/m/src/1673544204642.jpg">1673544204642.jpg</a>
+                            <span class="unimportant">
+                                (3.11 MB, 4535x6307, <span class="postfilename" title="__iwakura_lain_serial_experiments_lain_drawn_by_masahito_yomenu__4b6f75c63aa29357e160e880b44d088a.jpg">__iwakura_lain_serial_expe….jpg</span>
+                                )
+                            </span>
+                        </p>
+                        <a href="/board/m/src/1673544204642.jpg" target="_blank">
+                            <img class="post-image" src="/board/m/thumb/1673544204642.png" style="width:187px;height:260px" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="post op" id="op_564">
+                    <p class="intro">
+                        <input type="checkbox" class="delete" name="delete_564" id="delete_564"/>
+                        <label for="delete_564">
+                            <span class="subject">28chan &gt;*chan ep 2</span>
+                            <span class="name">neutrinino</span>
+                            <span class="capcode">## Admin</span>
+                            <time datetime="2023-01-12T17:23:26Z">12/01/23 (Thu) 17:23:26</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_564" onclick="highlightReply(564)" href="/board/m/res/564.html#564">No.</a>
+                        <a class="post_no" onclick="citeReply(564)" href="/board/m/res/564.html#q564">564</a>
+                        <i class="fa fa-thumb-tack" title="Sticky"></i>
+                    </p>
+                    <div class="body">
+                        Hey all, I thought it'd be best to make a new thread about 28chan's development and such, since pvnfu isn't running the site anymore. (To see more, check the news page)<br/>
+                        You all have to put up with me now <img id="troll" src="/board/static/emotes/troll.png">
+                        <br/>
+                        <br/>
+                        This is mostly just a clarity thing, everything mentioned on <a onclick="highlightReply('1', event);" href="/board/m/res/1.html#1">&gt;&gt;1</a>
+                        still applies.(Except improvements, and bugs.)<br/>
+                        <br/>
+                        What happened so far:<br/>
+                        - I've set up the site, and am waiting for the ssl stuff to go trough so we can finally be official again.<br/>
+                        - Added an overboard &gt;&gt;&gt;/all/<br/>
+                        - New board <a href="/board/wr/index.html">&gt;&gt;&gt;/wr/</a>
+                        <br/>
+                        - Changed the contents of the contacts page.<br/>
+                        <br/>
+                        Plans for the future:<br/>
+                        - Change up the rules a bit, to keep what made the place so great to begin with. If you've been here before, you might have seen my opinion on how it should be changed, but it's still being discussed. (Suggestions are welcome)<br/>
+                        - Edit the boardlist, add the non-boards, move /All/ to it's own category <br/>
+                        - Remove the fashion board<br/>
+                        - Add the banners that haven't been added yet<br/>
+                        <br/>More to come...
+                    </div>
+                </div>
+                <div class="post reply" id="reply_566">
+                    <p class="intro">
+                        <a id="566" class="post_anchor"></a>
+                        <input type="checkbox" class="delete" name="delete_566" id="delete_566"/>
+                        <label for="delete_566">
+                            <span class="name">bunanon</span>
+                            <span class="capcode">## Mod</span>
+                            <time datetime="2023-01-31T04:44:15Z">31/01/23 (Tue) 04:44:15</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_566" onclick="highlightReply(566)" href="/board/m/res/564.html#566">No.</a>
+                        <a class="post_no" onclick="citeReply(566)" href="/board/m/res/564.html#q566">566</a>
+                    </p>
+                    <div class="files"></div>
+                    <div class="body">
+                        I'm posting this for more clarity concerning <a href="/board/b/res/8293.html#8293">&gt;&gt;&gt;/b/8293</a>
+                        <br/>
+                        <br/>
+                        We (specifically me anyways) do total rangebans when bots are doing their shit, and i mean <strong>total</strong>
+                        rangebans, one rangeban i did had 32768 IPs belonging to it, sometimes I just fucking nuke the whole entire host if I see so much bot posting coming from the particular host or ISP.<br/>
+                        <br/>And as a reminder if you did get hit in the process, see the posts in the /b/ thread.
+                    </div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_567">
+                    <p class="intro">
+                        <a id="567" class="post_anchor"></a>
+                        <input type="checkbox" class="delete" name="delete_567" id="delete_567"/>
+                        <label for="delete_567">
+                            <span class="name">neutrinino</span>
+                            <time datetime="2023-01-31T13:09:50Z">31/01/23 (Tue) 13:09:50</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_567" onclick="highlightReply(567)" href="/board/m/res/564.html#567">No.</a>
+                        <a class="post_no" onclick="citeReply(567)" href="/board/m/res/564.html#q567">567</a>
+                    </p>
+                    <div class="files"></div>
+                    <div class="body">
+                        <a onclick="highlightReply('566', event);" href="/board/m/res/564.html#566">&gt;&gt;566</a>
+                        <br/>
+                        <span class="quote">&gt;specifically me anyways</span>
+                        <br/>
+                        Hardworking good partner.<br/>I should get to writing that script tbh.
+                    </div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_581">
+                    <p class="intro">
+                        <a id="581" class="post_anchor"></a>
+                        <input type="checkbox" class="delete" name="delete_581" id="delete_581"/>
+                        <label for="delete_581">
+                            <span class="name">neutrinino</span>
+                            <span class="capcode">## Admin</span>
+                            <time datetime="2023-05-24T05:32:37Z">24/05/23 (Wed) 05:32:37</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_581" onclick="highlightReply(581)" href="/board/m/res/564.html#581">No.</a>
+                        <a class="post_no" onclick="citeReply(581)" href="/board/m/res/564.html#q581">581</a>
+                    </p>
+                    <div class="files">
+                        <div class="file">
+                            <p class="fileinfo">
+                                File: <a href="/board/m/src/1684906356950.jpg">1684906356950.jpg</a>
+                                <span class="unimportant">
+                                    (331.29 KB, 2048x1262, <span class="postfilename" title="__iwakura_lain_serial_experiments_lain_drawn_by_wa_noko__0c919931c8701d0aa1032528888ad71a.jpg">__iwakura_lain_serial_expe….jpg</span>
+                                    )
+                                </span>
+                            </p>
+                            <a href="/board/m/src/1684906356950.jpg" target="_blank">
+                                <img class="post-image" src="/board/m/thumb/1684906356950.png" style="width:260px;height:160px" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body">
+                        More updates:<br/>
+                        <br/>
+                        Renamed <a href="/board/pol/index.html">&gt;&gt;&gt;/pol/</a>
+                        <br/>
+                        from: Politics &amp;News <br/>
+                        to: Politics and News<br/>
+                        (it was breaking the rss kek)<br/>
+                        <br/>
+                        Added back the footer, cause deleting/modifying it conflicts with the license.<br/>
+                        (The Tinyboard + vichan thingy at the bottom)<br/>
+                        <br/>
+                        Modified the header. Now it contains everything you'd be able to access from the homepage + reordered them so they look nicer.<br/>
+                        <br/>
+                        Added more banners.<br/>
+                        <br/>
+                        Removed the ads.(I think)<br/>
+                        If you notice any other, anywhere else, please tell me.<br/>
+                        <br/>
+                        Updated the contact page, so now it shows the correct places where you can actually... you know, contact us.<br/>
+                        <br/>
+                        <br/>
+                        Well that's pretty much everything you can notice. Probably more updates to come at some point. <br/>
+                        Tbh, I don't spend much time changing things here, and when I do I half expect shit to break for no reason... :DDD Kinda just glad things are working, and as the saying goes: "If it werks don't fuck it up."<br/>
+                        I probably forgot a few things, since most of these changes came pretty much one by one, throughout this time span since 28chan came back online again.<br/>
+                        <br/>Also, I was experimenting with some javascript stuff(on localhost), but due to how 28chan is set up it broke a few things, so in the end I decided against it. At least until I figure out wtf is going on.
+                    </div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_588">
+                    <p class="intro">
+                        <a id="588" class="post_anchor"></a>
+                        <input type="checkbox" class="delete" name="delete_588" id="delete_588"/>
+                        <label for="delete_588">
+                            <span class="name">anon</span>
+                            <time datetime="2023-08-12T00:44:05Z">12/08/23 (Sat) 00:44:05</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_588" onclick="highlightReply(588)" href="/board/m/res/564.html#588">No.</a>
+                        <a class="post_no" onclick="citeReply(588)" href="/board/m/res/564.html#q588">588</a>
+                    </p>
+                    <div class="files"></div>
+                    <div class="body">it tells me flood detected very frequently, makes posting annoying, it should be high priority to fix that and iirc this has been a problem since the site went online, no one knows how the vichan anti-flood system works</div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_589">
+                    <p class="intro">
+                        <a id="589" class="post_anchor"></a>
+                        <input type="checkbox" class="delete" name="delete_589" id="delete_589"/>
+                        <label for="delete_589">
+                            <span class="name">neutrinino</span>
+                            <time datetime="2023-08-12T01:00:05Z">12/08/23 (Sat) 01:00:05</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_589" onclick="highlightReply(589)" href="/board/m/res/564.html#589">No.</a>
+                        <a class="post_no" onclick="citeReply(589)" href="/board/m/res/564.html#q589">589</a>
+                    </p>
+                    <div class="files"></div>
+                    <div class="body">
+                        <a onclick="highlightReply('588', event);" href="/board/m/res/564.html#588">&gt;&gt;588</a>
+                        <br/>
+                        I remember pvnfu fixed it a long time ago, but we intentionally had to make it<br/>
+                        a "kind of an issue" again, since it makes this place much more of a hassle to<br/>
+                        raid.<br/>
+                        <br/>
+                        During those times, you would get this error mostly because you'd left a thread<br/>
+                        open for too long(not always, and also shouldn't be the case anymore).<br/>
+                        <br/>
+                        Now, you have to wait 3,5 minutes between posts, and it should not be an issue.<br/>
+                        (Tell me if that is not the case though.)<br/>
+                        <br/>
+                        My idea is, that you'd probably spend about that much time if you are going to<br/>
+                        leave a valuable post in most cases. In the exceptions, I believe most users<br/>
+                        would be fine with waiting a bit before making another post.<br/>
+                        (I'd actually like to hear the community's opinion on this, so anons please share <br/>
+                        your thoughts!)<br/>
+                        <br/>
+                        I'm sorry for the inconvenience, but it's currently quite an effective method vichan has,<br/>that is useful against raids.
+                    </div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_590">
+                    <p class="intro">
+                        <a id="590" class="post_anchor"></a>
+                        <input type="checkbox" class="delete" name="delete_590" id="delete_590"/>
+                        <label for="delete_590">
+                            <span class="name">anon</span>
+                            <time datetime="2023-08-14T22:30:09Z">14/08/23 (Mon) 22:30:09</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_590" onclick="highlightReply(590)" href="/board/m/res/564.html#590">No.</a>
+                        <a class="post_no" onclick="citeReply(590)" href="/board/m/res/564.html#q590">590</a>
+                    </p>
+                    <div class="files"></div>
+                    <div class="body">
+                        <a onclick="highlightReply('589', event);" href="/board/m/res/564.html#589">&gt;&gt;589</a>
+                        <br/>
+                        <span class="quote">&gt;Now, you have to wait 3,5 minutes between posts</span>
+                        <br/>I understand but that's way too much, 2 minutes at most
+                    </div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_591">
+                    <p class="intro">
+                        <a id="591" class="post_anchor"></a>
+                        <input type="checkbox" class="delete" name="delete_591" id="delete_591"/>
+                        <label for="delete_591">
+                            <span class="name">neutrinino</span>
+                            <time datetime="2023-08-14T22:36:57Z">14/08/23 (Mon) 22:36:57</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_591" onclick="highlightReply(591)" href="/board/m/res/564.html#591">No.</a>
+                        <a class="post_no" onclick="citeReply(591)" href="/board/m/res/564.html#q591">591</a>
+                    </p>
+                    <div class="files">
+                        <div class="file">
+                            <p class="fileinfo">
+                                File: <a href="/board/m/src/1692052617051.gif">1692052617051.gif</a>
+                                <span class="unimportant">
+                                    (2.05 MB, 588x640, <span class="postfilename">trade-offer.gif</span>
+                                    )
+                                </span>
+                            </p>
+                            <a href="/board/m/src/1692052617051.gif" target="_blank">
+                                <img class="post-image" src="/board/m/thumb/1692052617051.png" style="width:239px;height:260px" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <a onclick="highlightReply('590', event);" href="/board/m/res/564.html#590">&gt;&gt;590</a>
+                        <br/>2,75
+                    </div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_592">
+                    <p class="intro">
+                        <a id="592" class="post_anchor"></a>
+                        <input type="checkbox" class="delete" name="delete_592" id="delete_592"/>
+                        <label for="delete_592">
+                            <span class="name">Kogan</span>
+                            <time datetime="2023-08-15T07:36:21Z">15/08/23 (Tue) 07:36:21</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_592" onclick="highlightReply(592)" href="/board/m/res/564.html#592">No.</a>
+                        <a class="post_no" onclick="citeReply(592)" href="/board/m/res/564.html#q592">592</a>
+                    </p>
+                    <div class="files"></div>
+                    <div class="body">
+                        <a onclick="highlightReply('591', event);" href="/board/m/res/564.html#591">&gt;&gt;591</a>
+                        <br/>Kek
+                    </div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_593">
+                    <p class="intro">
+                        <a id="593" class="post_anchor"></a>
+                        <input type="checkbox" class="delete" name="delete_593" id="delete_593"/>
+                        <label for="delete_593">
+                            <span class="name">neutrinino</span>
+                            <time datetime="2023-08-15T17:58:20Z">15/08/23 (Tue) 17:58:20</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_593" onclick="highlightReply(593)" href="/board/m/res/564.html#593">No.</a>
+                        <a class="post_no" onclick="citeReply(593)" href="/board/m/res/564.html#q593">593</a>
+                    </p>
+                    <div class="files"></div>
+                    <div class="body">
+                        Alright I lowered it to 2m.<br/>If all goes well it stays this way.
+                    </div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_606">
+                    <p class="intro">
+                        <a id="606" class="post_anchor"></a>
+                        <input type="checkbox" class="delete" name="delete_606" id="delete_606"/>
+                        <label for="delete_606">
+                            <span class="name">neutrinino</span>
+                            <time datetime="2023-10-23T01:56:18Z">23/10/23 (Mon) 01:56:18</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_606" onclick="highlightReply(606)" href="/board/m/res/564.html#606">No.</a>
+                        <a class="post_no" onclick="citeReply(606)" href="/board/m/res/564.html#q606">606</a>
+                    </p>
+                    <div class="files">
+                        <div class="file">
+                            <p class="fileinfo">
+                                File: <a href="/board/m/src/1698026178079.jpg">1698026178079.jpg</a>
+                                <span class="unimportant">
+                                    (575.18 KB, 952x993, <span class="postfilename" title="__m200_girls_frontline_drawn_by_darkpulsegg__c233fb0cb147984e17cebc2652ad3d9a.jpg">__m200_girls_frontline_dra….jpg</span>
+                                    )
+                                </span>
+                            </p>
+                            <a href="/board/m/src/1698026178079.jpg" target="_blank">
+                                <img class="post-image" src="/board/m/thumb/1698026178079.png" style="width:249px;height:260px" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body">
+                        You guys can hover over the dates now and it will show how long ago the post was made. (Von forced me at gunpoint)<br/>(Also, this is kind of a hacky way, so if anything breaks contact me immediately!)
+                    </div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_608">
+                    <p class="intro">
+                        <a id="608" class="post_anchor"></a>
+                        <input type="checkbox" class="delete" name="delete_608" id="delete_608"/>
+                        <label for="delete_608">
+                            <span class="name">anon</span>
+                            <time datetime="2023-12-06T00:27:47Z">06/12/23 (Wed) 00:27:47</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_608" onclick="highlightReply(608)" href="/board/m/res/564.html#608">No.</a>
+                        <a class="post_no" onclick="citeReply(608)" href="/board/m/res/564.html#q608">608</a>
+                    </p>
+                    <div class="files"></div>
+                    <div class="body">
+                        <a onclick="highlightReply('564', event);" href="/board/m/res/564.html#564">&gt;&gt;564</a>
+                        <br/>It would be cool if you set up the web server so 28chan.org/b/ points to 28chan.org/board/b/
+                    </div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_609">
+                    <p class="intro">
+                        <a id="609" class="post_anchor"></a>
+                        <input type="checkbox" class="delete" name="delete_609" id="delete_609"/>
+                        <label for="delete_609">
+                            <span class="name">neutrinino</span>
+                            <time datetime="2023-12-06T21:46:19Z">06/12/23 (Wed) 21:46:19</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_609" onclick="highlightReply(609)" href="/board/m/res/564.html#609">No.</a>
+                        <a class="post_no" onclick="citeReply(609)" href="/board/m/res/564.html#q609">609</a>
+                    </p>
+                    <div class="files"></div>
+                    <div class="body">
+                        <a onclick="highlightReply('608', event);" href="/board/m/res/564.html#608">&gt;&gt;608</a>
+                        <br/>I'll look into it sometime
+                    </div>
+                </div>
+                <br/>
+                <div class="post reply" id="reply_615">
+                    <p class="intro">
+                        <a id="615" class="post_anchor"></a>
+                        <input type="checkbox" class="delete" name="delete_615" id="delete_615"/>
+                        <label for="delete_615">
+                            <span class="name">neutrinino</span>
+                            <span class="capcode">## Admin</span>
+                            <time datetime="2023-12-23T08:15:16Z">23/12/23 (Sat) 08:15:16</time>
+                        </label>
+                        &nbsp;<a class="post_no" id="post_no_615" onclick="highlightReply(615)" href="/board/m/res/564.html#615">No.</a>
+                        <a class="post_no" onclick="citeReply(615)" href="/board/m/res/564.html#q615">615</a>
+                    </p>
+                    <div class="files">
+                        <div class="file">
+                            <p class="fileinfo">
+                                File: <a href="/board/m/src/1703319316165.webm">1703319316165.webm</a>
+                                <span class="unimportant">
+                                    (3.06 MB, 1920x1080, <span class="postfilename">28chanEmployeeServer.webm</span>
+                                    )
+                                </span>
+                            </p>
+                            <a href="/board/player.php?v=/board/m/src/1703319316165.webm&amp;t=28chanEmployeeServer.webm&amp;loop=1" target="_blank" class="file">
+                                <img class="post-image" src="/board/m/thumb/1703319316165.jpg" style="width:260px;height:146px" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body">
+                        Hey all, quick update.<br/>
+                        I'll be doing maintenance and switching ssl to let's encrypt around the end of december. If the site goes down for a day or two, it's planned, we're not goin'<br/>
+                        anywhere.<br/>
+                        <br/>
+                        If I don't fuck it up, there will only be a few mins of downtime.<br/>
+                        If that's not the case, I'll post updates on matrix and dc.<br/>
+                        <a href="https://www.28chan.org/board/contact.html" rel="nofollow" target="_blank">https://www.28chan.org/board/contact.html</a>
+                        <br/>
+                        <br/>Merry Christmas &amp;happy new year everyone!
+                    </div>
+                </div>
+                <br/>
+                <br class="clear"/>
+                <hr/>
+            </div>
+            <div id="thread-interactions">
+                <span id="thread-links">
+                    <a id="thread-return" href="/board/m/index.html">[Return]</a>
+                    <a id="thread-top" href="#top">[Go to top]</a>
+                    <a id="thread-catalog" href="/board/m/catalog.html">[Catalog]</a>
+                </span>
+                <span id="thread-quick-reply">
+                    <a id="link-quick-reply" href="#">[Post a Reply]</a>
+                </span>
+                <div id="post-moderation-fields">
+                    <div id="delete-fields">
+                        Delete Post [<input title="Delete file only" type="checkbox" name="file" id="delete_file"/>
+                        <label for="delete_file">File</label>
+                        ] <label for="password">Password</label>
+                        <input id="password" type="password" name="password" size="12" maxlength="18"/>
+                        <input type="submit" name="delete" value="Delete"/>
+                    </div>
+                    <div id="report-fields">
+                        <label for="reason">Reason</label>
+                        <input id="reason" type="text" name="reason" size="20" maxlength="30"/>
+                        <input type="submit" name="report" value="Report"/>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </form>
+        <a name="bottom"></a>
+        <div class="boardlist bottom">
+            <span class="sub" data-description="0">
+                [ <a href="/board/">home</a>
+                ]
+            </span>
+            <span class="sub" data-description="1">
+                [ <a href="/board/o/index.html" title="Auto">o</a>
+                / <a href="/board/g/index.html" title="Technology">g</a>
+                / <a href="/board/v/index.html" title="Video Games">v</a>
+                / <a href="/board/a/index.html" title="Anime">a</a>
+                ]
+            </span>
+            <span class="sub" data-description="2">
+                [ <a href="/board/art/index.html" title="Arts">art</a>
+                / <a href="/board/mu/index.html" title="Music">mu</a>
+                / <a href="/board/w/index.html" title="Wallpapers">w</a>
+                / <a href="/board/fa/index.html" title="Fashion">fa</a>
+                / <a href="/board/wr/index.html" title="Writing">wr</a>
+                ]
+            </span>
+            <span class="sub" data-description="3">
+                [ <a href="/board/en/index.html" title="General">en</a>
+                / <a href="/board/p/index.html" title="Português">p</a>
+                / <a href="/board/s/index.html" title="Español">s</a>
+                / <a href="/board/m/index.html" title="Meta">m</a>
+                ]
+            </span>
+            <span class="sub" data-description="4">
+                [ <a href="/board/b/index.html" title="Random">b</a>
+                / <a href="/board/t/index.html" title="Torrents">t</a>
+                / <a href="/board/pol/index.html" title="Politics and News">pol</a>
+                ]
+            </span>
+            <span class="sub" data-description="5">
+                [ <a href="/board/all/index.html">all</a>
+                ]
+            </span>
+            <span class="sub" data-description="6">
+                [ <a href="/board/rules.html">rules</a>
+                / <a href="/board/news.html">news</a>
+                / <a href="/board/contact.html">contact</a>
+                / <a href="/board/about.html">about</a>
+                / <a href="/board/donate.html">donate</a>
+                ]
+            </span>
+        </div>
+        <!--  -->
+        <footer>
+            <p class="unimportant" style="margin-top:20px;text-align:center;">
+                - <a href="http://tinyboard.org/">Tinyboard</a>
+                +                        <a href='https://int.vichan.net/devel/'>vichan</a>
+                4.5.2 -                <br>
+                <a href="http://tinyboard.org/">Tinyboard</a>
+                Copyright &copy;2010-2014 Tinyboard Development Group                <br>
+                <a href="https://int.vichan.net/devel/">vichan</a>
+                Copyright &copy;2012-2014 vichan-devel
+            </p>
+            <p class="unimportant" style="text-align:center;">All trademarks, copyrights, comments, and images on this page are owned by and are the responsibility of their respective parties.</p>
+        </footer>
+        <script type="text/javascript">
+            ready();
+        </script>
+    </body>
+</html>

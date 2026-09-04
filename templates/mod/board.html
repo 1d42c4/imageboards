@@ -1,0 +1,79 @@
+{% if new %}
+	{% set action = '?/new-board' %}
+{% else %}
+	{% set action = '?/edit/' ~ board.uri %}
+{% endif %}
+
+<form action="{{ action }}" method="post">
+	<input type="hidden" name="token" value="{{ token }}">
+	<table>
+		<tr>
+			<th>{% trans 'URI' %}</th>
+			<td>
+				{% if not new %}
+					{{ config.board_abbreviation|sprintf(board.uri) }}
+				{% else %}
+					/<input size="10" maxlength="255" type="text" name="uri" autocomplete="off">/
+				{% endif %}
+			</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Title' %}</th>
+			<td>
+				<input size="25" type="text" name="title" value="{{ board.title|e }}" autocomplete="off">
+			</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Subtitle' %}</th>
+			<td>
+				<input size="25" type="text" name="subtitle" value="{{ board.subtitle|e }}" autocomplete="off">
+			</td>
+		</tr>
+		{% if not new %}
+		<tr>
+			<th colspan="2" style="text-align:left;padding-top:1em;">{% trans 'Per-board posting rules (each optional)' %}</th>
+		</tr>
+		<tr>
+			<th>{% trans 'Post approval' %}</th>
+			<td>
+				<label>
+					<input type="checkbox" name="require_approval" value="1"{% if board.require_approval %} checked{% endif %}>
+					{% trans 'On — new posts wait in the approval queue until a mod accepts them' %}
+				</label>
+				<br>
+				<span class="unimportant">{% trans 'Off (default) — posts appear immediately. Independent of board password.' %}</span>
+			</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Board password' %}</th>
+			<td>
+				<label>
+					<input type="checkbox" name="enable_board_password" value="1" id="enable_board_password"{% if board.post_password %} checked{% endif %}>
+					{% trans 'On — posters must enter a shared password to post (mods bypass)' %}
+				</label>
+				<br>
+				<input size="25" type="password" name="board_password" value="" autocomplete="new-password"
+					placeholder="{% if board.post_password %}{% trans 'Leave blank to keep current password' %}{% else %}{% trans 'Set password when enabling' %}{% endif %}"
+					style="margin-top:4px;">
+				{% if board.post_password %}
+					<span class="unimportant"> — {% trans 'password is currently set' %}</span>
+				{% endif %}
+				<br>
+				<span class="unimportant">{% trans 'Uncheck “On” and save to turn password posting off. Independent of approval.' %}</span>
+			</td>
+		</tr>
+		{% endif %}
+	</table>
+	
+	<ul style="padding:0;text-align:center;list-style:none">
+		{% if new %}
+			<li><input type="submit" value="{% trans 'Create board' %}"></li>
+		{% else %}
+			<li><input type="submit" value="{% trans 'Save changes' %}"></li>
+			{% if mod|hasPermission(config.mod.deleteboard) %}
+				<li><input name="delete" onclick="return confirm('Are you sure you want to permanently delete this board?');" type="submit" value="{% trans 'Delete board' %}"></li>
+			{% endif %}
+		{% endif %}
+	</ul>
+</form>
+

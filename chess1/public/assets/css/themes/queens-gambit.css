@@ -1,0 +1,42 @@
+/* Queen's Gambit
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: light; /* Browser color scheme. */
+    --theme-bg: #f3edf8; /* Page background color. */
+    --theme-bg-image: linear-gradient(120deg, rgba(255,255,255,.18), transparent 35%), radial-gradient(circle at 90% 0, rgba(180,120,220,.18), transparent 32rem); /* Optional page gradient or image. */
+    --theme-text: #241a2c; /* Main text. */
+    --theme-link: #563779; /* Links and secondary actions. */
+    --theme-hover: #a23770; /* Hovered links. */
+    --theme-muted: #6c6076; /* Quiet metadata. */
+    --theme-nav: #6c6076; /* Board navigation. */
+    --theme-heading: #7d2d66; /* Board and page headings. */
+    --theme-panel: #e4d8ef; /* Reply boxes and utility panels. */
+    --theme-border: #bea8d2; /* Main borders. */
+    --theme-line: #bea8d2; /* Subtle separators. */
+    --theme-surface: #fdfaff; /* Raised content surfaces. */
+    --theme-accent: #a985c2; /* Section title bars. */
+    --theme-accent-text: #000000; /* Text on accent bars. */
+    --theme-input: #ffffff; /* Input background. */
+    --theme-input-border: #bea8d2; /* Input borders. */
+    --theme-subject: #51306d; /* Post subjects. */
+    --theme-name: #337058; /* Poster names. */
+    --theme-quote: #647b23; /* Greentext. */
+    --theme-button: #e4d8ef; /* Button face. */
+    --theme-button-border: #bea8d2; /* Button border. */
+    --theme-button-hover: #a985c2; /* Hovered button. */
+    --theme-card-hover: #a985c2; /* Hovered cards. */
+    --theme-pgn: #fdfaff; /* PGN block background. */
+    --theme-pgn-border: #a985c2; /* PGN accent border. */
+    --theme-font: "Segoe UI", Arial, sans-serif; /* Site font stack. */
+    --theme-heading-font: Georgia, serif; /* Heading font stack. */
+    --theme-heading-letter-spacing: .01em; /* Heading spacing. */
+    --theme-radius: 10px 2px; /* General corner radius. */
+    --theme-reply-radius: 16px 2px; /* Reply corner radius. */
+    --theme-control-radius: 6px; /* Form and button radius. */
+    --theme-image-radius: 8px; /* Image corner radius. */
+    --theme-shadow: 0 3px 12px rgba(80,30,100,.15); /* Panel shadow. */
+    --theme-reply-border-width: 1px 1px 1px 5px; /* Reply border widths. */
+}

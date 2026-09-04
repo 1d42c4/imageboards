@@ -1,0 +1,12 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'app_name' => 'My Chess Community',
+    'tagline' => 'Friendly chess discussion and analysis.',
+    'timezone' => 'America/New_York',
+    // Use '/boards' when the app is hosted below https://example.com/boards.
+    'base_path' => '',
+];
+

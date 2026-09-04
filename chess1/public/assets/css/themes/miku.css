@@ -1,0 +1,41 @@
+/* Miku
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: light; /* Browser color scheme. */
+    --theme-bg: #d2ffee; /* Page background color. */
+    --theme-bg-image: url("images/fade-miku.png"); /* Optional page gradient or image. */
+    --theme-bg-repeat: repeat-x; /* Background repetition. */
+    --theme-bg-position: top center; /* Background position. */
+    --theme-text: #102b2d; /* Main text. */
+    --theme-link: #00637b; /* Links and secondary actions. */
+    --theme-hover: #dd0000; /* Hovered links. */
+    --theme-muted: #567b7c; /* Quiet metadata. */
+    --theme-nav: #0093ab; /* Board navigation. */
+    --theme-heading: #800000; /* Board and page headings. */
+    --theme-panel: #b6ddde; /* Reply boxes and utility panels. */
+    --theme-border: #8fcccd; /* Main borders. */
+    --theme-line: #a8d9d2; /* Subtle separators. */
+    --theme-surface: #effff9; /* Raised content surfaces. */
+    --theme-accent: #95d2d3; /* Section title bars. */
+    --theme-accent-text: #15383a; /* Text on accent bars. */
+    --theme-input: #ffffff; /* Input background. */
+    --theme-input-border: #72b9bb; /* Input borders. */
+    --theme-subject: #117743; /* Post subjects. */
+    --theme-name: #117743; /* Poster names. */
+    --theme-quote: #4d861f; /* Greentext. */
+    --theme-button: #b6ddde; /* Button face. */
+    --theme-button-border: #8fcccd; /* Button border. */
+    --theme-button-hover: #a9d8ff; /* Hovered button. */
+    --theme-card-hover: #a9d8ff; /* Hovered cards. */
+    --theme-pgn: rgba(239,255,249,.88); /* PGN block background. */
+    --theme-pgn-border: #95d2d3; /* PGN accent border. */
+    --theme-heading-font: Tahoma, Arial, sans-serif; /* Heading font stack. */
+    --theme-heading-letter-spacing: -1px; /* Heading spacing. */
+    --theme-radius: 1px; /* General corner radius. */
+    --theme-reply-radius: 1px; /* Reply corner radius. */
+    --theme-control-radius: 1px; /* Form and button radius. */
+    --theme-reply-border-width: 0 1px 1px 0; /* Reply border widths. */
+}

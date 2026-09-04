@@ -1,0 +1,60 @@
+/* Plain browser-style controls */
+
+.button {
+    display: inline-block;
+    padding: 2px 7px;
+    color: #000;
+    background: #eee;
+    border: 2px outset #ccc;
+    border-radius: 0;
+    cursor: pointer;
+    font-weight: normal;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.button:visited {
+    color: #000;
+}
+
+.button:hover {
+    color: #000;
+    background: #ddd;
+    text-decoration: none;
+}
+
+.button:active {
+    border-style: inset;
+}
+
+.button--quiet {
+    color: #34345c;
+}
+
+.button--danger {
+    color: #800;
+}
+
+.button--small {
+    padding: 1px 5px;
+    font-size: 0.9rem;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+}
+
+.text-button {
+    padding: 0;
+    color: #34345c;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.text-button--danger {
+    color: #800;
+}
+

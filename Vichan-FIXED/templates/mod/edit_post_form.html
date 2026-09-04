@@ -1,0 +1,74 @@
+<form action="" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="token" value="{{ token }}">
+
+	<table>
+		<tr>
+			<th>{% trans %}Name{% endtrans %}</th>
+			<td>
+				<input type="text" name="name" size="25" maxlength="35" autocomplete="off" value="{{ post.name|e }}">
+			</td>
+		</tr>
+		<tr>
+			<th>{% trans %}Email{% endtrans %}</th>
+			<td>
+				<input type="text" name="email" size="25" maxlength="40" autocomplete="off" value="{{ post.email|e }}">
+			</td>
+		</tr>
+		<tr>
+			<th>{% trans %}Subject{% endtrans %}</th>
+			<td>
+				<input style="float:left;" type="text" name="subject" size="25" maxlength="100" autocomplete="off" value="{{ post.subject|e }}">
+				<input accesskey="s" style="margin-left:2px;" type="submit" name="post" value="{% trans %}Update{% endtrans %}">
+			</td>
+		</tr>
+		<tr>
+			<th>{% trans %}Comment{% endtrans %}</th>
+			<td>
+				<textarea name="body" id="body" rows="8" cols="35">{% if raw %}{{ post.body }}{% else %}{{ post.body_nomarkup }}{% endif %}</textarea>
+			</td>
+		</tr>
+		<tr>
+			<th>{% trans %}Image{% endtrans %}</th>
+			<td>
+				{% if files and files|length %}
+					<div style="margin-bottom:0.6em">
+						{% for f in files %}
+							{% if f.file and f.file != 'deleted' %}
+								<p class="unimportant">
+									{% trans %}Current{% endtrans %}:
+									<a href="{{ config.root }}{{ board }}/{{ config.dir.img }}{{ f.file }}" target="_blank">{{ f.file }}</a>
+									{% if f.width %}({{ f.width }}×{{ f.height }}){% endif %}
+								</p>
+								{% if f.thumb and f.thumb != 'spoiler' and f.thumb != 'file' %}
+									<img src="{{ config.root }}{{ board }}/{{ config.dir.thumb }}{{ f.thumb }}" alt="" style="max-width:125px;max-height:125px;height:auto">
+								{% endif %}
+							{% else %}
+								<p class="unimportant">{% trans %}No image (deleted).{% endtrans %}</p>
+							{% endif %}
+						{% endfor %}
+					</div>
+					<label>
+						<input type="checkbox" name="remove_file" value="1">
+						{% trans %}Remove image (keep post text){% endtrans %}
+					</label>
+					<br>
+				{% else %}
+					<p class="unimportant">{% trans %}This post has no image.{% endtrans %}</p>
+				{% endif %}
+				<p style="margin-top:0.6em">
+					<label for="new_file">{% trans %}Replace / add image{% endtrans %}:</label><br>
+					<input type="file" name="file" id="new_file" accept="image/*">
+				</p>
+				<p class="unimportant">{% trans %}Upload a new image to replace the current one. Text is kept. Leave empty to keep the current image.{% endtrans %}</p>
+			</td>
+		</tr>
+	</table>
+	<p style="text-align:center">
+		{% if raw %}
+			{% trans %}Currently editing raw HTML.{% endtrans %}
+			<a href="?/{{ board }}/edit/{{ post.id }}">{% trans %}Edit markup instead?{% endtrans %}</a>
+		{% else %}
+			<a href="?/{{ board }}/edit_raw/{{ post.id }}">{% trans %}Edit raw HTML instead?{% endtrans %}</a>
+		{% endif %}
+	</p>
+</form>

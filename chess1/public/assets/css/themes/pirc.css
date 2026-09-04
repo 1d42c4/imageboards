@@ -1,0 +1,39 @@
+/* Pirc
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: light; /* Browser color scheme. */
+    --theme-bg: #f0edf4; /* Page background color. */
+    --theme-text: #221c27; /* Main text. */
+    --theme-link: #514164; /* Links and secondary actions. */
+    --theme-hover: #9d3654; /* Hovered links. */
+    --theme-muted: #6c6472; /* Quiet metadata. */
+    --theme-nav: #6c6472; /* Board navigation. */
+    --theme-heading: #7f3347; /* Board and page headings. */
+    --theme-panel: #dfd9e6; /* Reply boxes and utility panels. */
+    --theme-border: #b6aabd; /* Main borders. */
+    --theme-line: #b6aabd; /* Subtle separators. */
+    --theme-surface: #fcfaff; /* Raised content surfaces. */
+    --theme-accent: #9987a6; /* Section title bars. */
+    --theme-accent-text: #000000; /* Text on accent bars. */
+    --theme-input: #ffffff; /* Input background. */
+    --theme-input-border: #b6aabd; /* Input borders. */
+    --theme-subject: #51405f; /* Post subjects. */
+    --theme-name: #2d6f56; /* Poster names. */
+    --theme-quote: #627821; /* Greentext. */
+    --theme-button: #dfd9e6; /* Button face. */
+    --theme-button-border: #b6aabd; /* Button border. */
+    --theme-button-hover: #9987a6; /* Hovered button. */
+    --theme-card-hover: #9987a6; /* Hovered cards. */
+    --theme-pgn: #fcfaff; /* PGN block background. */
+    --theme-pgn-border: #9987a6; /* PGN accent border. */
+    --theme-font: "Trebuchet MS", Arial, sans-serif; /* Site font stack. */
+    --theme-heading-font: Georgia, serif; /* Heading font stack. */
+    --theme-heading-letter-spacing: 0; /* Heading spacing. */
+    --theme-radius: 8px 2px; /* General corner radius. */
+    --theme-reply-radius: 8px 2px; /* Reply corner radius. */
+    --theme-control-radius: 5px; /* Form and button radius. */
+    --theme-shadow: 0 2px 7px rgba(70,45,85,.12); /* Panel shadow. */
+}

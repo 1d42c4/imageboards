@@ -1,0 +1,32 @@
+/* Checkmate
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: light; /* Browser color scheme. */
+    --theme-bg: #eef2ff; /* Page background color. */
+    --theme-text: #000000; /* Main text. */
+    --theme-link: #34345c; /* Links and secondary actions. */
+    --theme-hover: #dd0000; /* Hovered links. */
+    --theme-muted: #707070; /* Quiet metadata. */
+    --theme-nav: #8899aa; /* Board navigation. */
+    --theme-heading: #af0a0f; /* Board and page headings. */
+    --theme-panel: #d6daf0; /* Reply boxes and utility panels. */
+    --theme-border: #b7c5d9; /* Main borders. */
+    --theme-line: #d8deef; /* Subtle separators. */
+    --theme-surface: #ffffff; /* Raised content surfaces. */
+    --theme-accent: #9988ee; /* Section title bars. */
+    --theme-accent-text: #000000; /* Text on accent bars. */
+    --theme-input: #ffffff; /* Input background. */
+    --theme-input-border: #a9a9a9; /* Input borders. */
+    --theme-subject: #0f0c5d; /* Post subjects. */
+    --theme-name: #117743; /* Poster names. */
+    --theme-quote: #789922; /* Greentext. */
+    --theme-button: #eeeeee; /* Button face. */
+    --theme-button-border: #cccccc; /* Button border. */
+    --theme-button-hover: #dddddd; /* Hovered button. */
+    --theme-card-hover: #c9cfe8; /* Hovered cards. */
+    --theme-pgn: rgba(255, 255, 255, 0.55); /* PGN block background. */
+    --theme-pgn-border: #9988ee; /* PGN accent border. */
+}

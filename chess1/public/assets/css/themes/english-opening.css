@@ -1,0 +1,40 @@
+/* English Opening
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: light; /* Browser color scheme. */
+    --theme-bg: #edf4ea; /* Page background color. */
+    --theme-text: #1a2518; /* Main text. */
+    --theme-link: #365b2f; /* Links and secondary actions. */
+    --theme-hover: #9b462e; /* Hovered links. */
+    --theme-muted: #657260; /* Quiet metadata. */
+    --theme-nav: #657260; /* Board navigation. */
+    --theme-heading: #73402c; /* Board and page headings. */
+    --theme-panel: #dce8d7; /* Reply boxes and utility panels. */
+    --theme-border: #b0c3a9; /* Main borders. */
+    --theme-line: #b0c3a9; /* Subtle separators. */
+    --theme-surface: #fbfff9; /* Raised content surfaces. */
+    --theme-accent: #93b486; /* Section title bars. */
+    --theme-accent-text: #000000; /* Text on accent bars. */
+    --theme-input: #ffffff; /* Input background. */
+    --theme-input-border: #b0c3a9; /* Input borders. */
+    --theme-subject: #3b5832; /* Post subjects. */
+    --theme-name: #286b45; /* Poster names. */
+    --theme-quote: #5c761c; /* Greentext. */
+    --theme-button: #dce8d7; /* Button face. */
+    --theme-button-border: #b0c3a9; /* Button border. */
+    --theme-button-hover: #93b486; /* Hovered button. */
+    --theme-card-hover: #93b486; /* Hovered cards. */
+    --theme-pgn: #fbfff9; /* PGN block background. */
+    --theme-pgn-border: #93b486; /* PGN accent border. */
+    --theme-font: Georgia, serif; /* Site font stack. */
+    --theme-heading-font: Georgia, serif; /* Heading font stack. */
+    --theme-heading-letter-spacing: 0; /* Heading spacing. */
+    --theme-radius: 1px; /* General corner radius. */
+    --theme-reply-radius: 1px; /* Reply corner radius. */
+    --theme-control-radius: 1px; /* Form and button radius. */
+    --theme-shadow: 0 2px 0 rgba(40,60,45,.08); /* Panel shadow. */
+    --theme-reply-border-width: 1px 1px 2px 4px; /* Reply border widths. */
+}

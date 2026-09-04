@@ -1,0 +1,39 @@
+/* Nimzo-Indian
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: light; /* Browser color scheme. */
+    --theme-bg: #eaf1eb; /* Page background color. */
+    --theme-bg-image: repeating-linear-gradient(135deg, transparent 0 24px, rgba(70,50,100,.035) 24px 25px); /* Optional page gradient or image. */
+    --theme-text: #15231a; /* Main text. */
+    --theme-link: #245239; /* Links and secondary actions. */
+    --theme-hover: #98402e; /* Hovered links. */
+    --theme-muted: #5d7063; /* Quiet metadata. */
+    --theme-nav: #5d7063; /* Board navigation. */
+    --theme-heading: #793a2d; /* Board and page headings. */
+    --theme-panel: #d4e3d7; /* Reply boxes and utility panels. */
+    --theme-border: #a4bca9; /* Main borders. */
+    --theme-line: #a4bca9; /* Subtle separators. */
+    --theme-surface: #f9fdfa; /* Raised content surfaces. */
+    --theme-accent: #76a384; /* Section title bars. */
+    --theme-accent-text: #000000; /* Text on accent bars. */
+    --theme-input: #ffffff; /* Input background. */
+    --theme-input-border: #a4bca9; /* Input borders. */
+    --theme-subject: #2a4f38; /* Post subjects. */
+    --theme-name: #246b43; /* Poster names. */
+    --theme-quote: #59751d; /* Greentext. */
+    --theme-button: #d4e3d7; /* Button face. */
+    --theme-button-border: #a4bca9; /* Button border. */
+    --theme-button-hover: #76a384; /* Hovered button. */
+    --theme-card-hover: #76a384; /* Hovered cards. */
+    --theme-pgn: #f9fdfa; /* PGN block background. */
+    --theme-pgn-border: #76a384; /* PGN accent border. */
+    --theme-font: "Segoe UI", Arial, sans-serif; /* Site font stack. */
+    --theme-heading-font: "Trebuchet MS", sans-serif; /* Heading font stack. */
+    --theme-heading-letter-spacing: -.02em; /* Heading spacing. */
+    --theme-radius: 5px; /* General corner radius. */
+    --theme-reply-radius: 10px 2px; /* Reply corner radius. */
+    --theme-control-radius: 4px; /* Form and button radius. */
+}

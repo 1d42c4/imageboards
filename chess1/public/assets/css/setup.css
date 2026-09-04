@@ -1,0 +1,106 @@
+/* Setup, login, and error pages */
+
+.auth-card {
+    width: min(520px, 94%);
+    margin: 28px auto;
+    padding: 9px;
+    background: #fff;
+    border: 1px solid #98e;
+}
+
+.auth-card__mark {
+    display: none;
+}
+
+.auth-card h1 {
+    margin-bottom: 4px;
+    color: #af0a0f;
+    font-size: 1.4rem;
+}
+
+.auth-card > p {
+    margin-bottom: 8px;
+}
+
+.auth-card .stack-form {
+    padding: 0;
+    border: 0;
+}
+
+.setup-page {
+    min-height: calc(100vh - 95px);
+}
+
+.setup-card {
+    width: min(620px, 94%);
+}
+
+.setup-checks {
+    display: grid;
+    gap: 2px;
+    margin: 9px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.setup-checks li {
+    display: grid;
+    grid-template-columns: 18px minmax(130px, 1fr) minmax(180px, 2fr);
+    gap: 4px;
+    padding: 3px 5px;
+    background: #eef2ff;
+    border-bottom: 1px solid #d8deef;
+}
+
+.setup-checks .is-ready > span:first-child {
+    color: #117743;
+    font-weight: bold;
+}
+
+.setup-checks .is-missing > span:first-child {
+    color: #af0a0f;
+    font-weight: bold;
+}
+
+.setup-checks small {
+    color: #707070;
+}
+
+.setup-message {
+    margin: 7px 0;
+    padding: 5px;
+    background: #d6daf0;
+    border: 1px solid #b7c5d9;
+}
+
+.setup-message--error {
+    color: #800;
+    background: #f0c0b0;
+    border-color: #d99f97;
+}
+
+.setup-actions,
+.error-page__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.error-page {
+    width: min(620px, 94%);
+    margin: 40px auto;
+    text-align: center;
+}
+
+.error-page__piece {
+    display: none;
+}
+
+.error-page h1 {
+    color: #af0a0f;
+}
+
+.error-page__actions {
+    justify-content: center;
+}
+

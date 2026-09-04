@@ -1,0 +1,41 @@
+/* Bishop
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: light; /* Browser color scheme. */
+    --theme-bg: #f5f5f3; /* Page background color. */
+    --theme-text: #222222; /* Main text. */
+    --theme-link: #31526f; /* Links and secondary actions. */
+    --theme-hover: #a12e2e; /* Hovered links. */
+    --theme-muted: #66665f; /* Quiet metadata. */
+    --theme-nav: #66665f; /* Board navigation. */
+    --theme-heading: #7b2d2d; /* Board and page headings. */
+    --theme-panel: #ececea; /* Reply boxes and utility panels. */
+    --theme-border: #c9c9c4; /* Main borders. */
+    --theme-line: #c9c9c4; /* Subtle separators. */
+    --theme-surface: #ffffff; /* Raised content surfaces. */
+    --theme-accent: #b9c4cd; /* Section title bars. */
+    --theme-accent-text: #000000; /* Text on accent bars. */
+    --theme-input: #ffffff; /* Input background. */
+    --theme-input-border: #c9c9c4; /* Input borders. */
+    --theme-subject: #344f67; /* Post subjects. */
+    --theme-name: #2d6c4b; /* Poster names. */
+    --theme-quote: #607b20; /* Greentext. */
+    --theme-button: #ececea; /* Button face. */
+    --theme-button-border: #c9c9c4; /* Button border. */
+    --theme-button-hover: #b9c4cd; /* Hovered button. */
+    --theme-card-hover: #b9c4cd; /* Hovered cards. */
+    --theme-pgn: #ffffff; /* PGN block background. */
+    --theme-pgn-border: #b9c4cd; /* PGN accent border. */
+    --theme-font: "Segoe UI", Arial, sans-serif; /* Site font stack. */
+    --theme-heading-font: Palatino, Georgia, serif; /* Heading font stack. */
+    --theme-heading-letter-spacing: 0; /* Heading spacing. */
+    --theme-radius: 5px; /* General corner radius. */
+    --theme-reply-radius: 2px 12px 12px 2px; /* Reply corner radius. */
+    --theme-control-radius: 4px; /* Form and button radius. */
+    --theme-image-radius: 4px; /* Image corner radius. */
+    --theme-shadow: 0 1px 4px rgba(40,90,70,.10); /* Panel shadow. */
+    --theme-reply-border-width: 1px 1px 1px 4px; /* Reply border widths. */
+}

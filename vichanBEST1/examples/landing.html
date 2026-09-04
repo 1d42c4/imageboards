@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Imageboard</title>
+	<link rel="stylesheet" href="/stylesheets/style.css">
+	<style>
+		body {
+			max-width: 42rem;
+			margin: 2.5rem auto;
+			padding: 0 1.25rem;
+			font-family: system-ui, sans-serif;
+			line-height: 1.5;
+		}
+		header h1 { margin-bottom: 0.25rem; }
+		header p { color: #555; margin-top: 0; }
+		nav ul { list-style: none; padding: 0; }
+		nav li { margin: 0.75rem 0; padding-bottom: 0.75rem; border-bottom: 1px solid #ddd; }
+		nav a { font-weight: 600; }
+		.muted { color: #666; font-size: 0.9rem; }
+		code { background: #f4f4f4; padding: 0.1em 0.35em; border-radius: 3px; }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>My Imageboard</h1>
+		<p class="muted">This file is <code>index.html</code> — edit it freely. The engine will not overwrite it after install.</p>
+	</header>
+
+	<section>
+		<h2>Boards</h2>
+		<nav>
+			<ul>
+				<!-- Add or remove boards by hand, or link to the generated list: -->
+				<li>
+					<a href="/b/">/b/ — Random</a>
+					<a class="muted" href="/b/catalog.html">catalog</a>
+				</li>
+			</ul>
+		</nav>
+		<p class="muted">Auto-generated list: <a href="/boards.html">boards.html</a> (updated on rebuild).</p>
+	</section>
+
+	<section>
+		<h2>Staff</h2>
+		<p><a href="/mod.php">Mod panel</a></p>
+	</section>
+
+	<footer class="muted">
+		<p>Tip: keep branding and copy here; leave board HTML to the engine under <code>/b/</code>, <code>/b/res/</code>, etc.</p>
+	</footer>
+</body>
+</html>

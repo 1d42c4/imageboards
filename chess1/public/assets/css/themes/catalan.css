@@ -1,0 +1,39 @@
+/* Catalan
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: light; /* Browser color scheme. */
+    --theme-bg: #f6f0e3; /* Page background color. */
+    --theme-text: #252016; /* Main text. */
+    --theme-link: #315a77; /* Links and secondary actions. */
+    --theme-hover: #a8542b; /* Hovered links. */
+    --theme-muted: #6e6658; /* Quiet metadata. */
+    --theme-nav: #6e6658; /* Board navigation. */
+    --theme-heading: #8b4c24; /* Board and page headings. */
+    --theme-panel: #e9ddc4; /* Reply boxes and utility panels. */
+    --theme-border: #c7b58f; /* Main borders. */
+    --theme-line: #c7b58f; /* Subtle separators. */
+    --theme-surface: #fffaf0; /* Raised content surfaces. */
+    --theme-accent: #7da5be; /* Section title bars. */
+    --theme-accent-text: #000000; /* Text on accent bars. */
+    --theme-input: #ffffff; /* Input background. */
+    --theme-input-border: #c7b58f; /* Input borders. */
+    --theme-subject: #38566d; /* Post subjects. */
+    --theme-name: #2e6e4e; /* Poster names. */
+    --theme-quote: #69781b; /* Greentext. */
+    --theme-button: #e9ddc4; /* Button face. */
+    --theme-button-border: #c7b58f; /* Button border. */
+    --theme-button-hover: #7da5be; /* Hovered button. */
+    --theme-card-hover: #7da5be; /* Hovered cards. */
+    --theme-pgn: #fffaf0; /* PGN block background. */
+    --theme-pgn-border: #7da5be; /* PGN accent border. */
+    --theme-font: Georgia, serif; /* Site font stack. */
+    --theme-heading-font: Georgia, serif; /* Heading font stack. */
+    --theme-heading-letter-spacing: 0; /* Heading spacing. */
+    --theme-radius: 7px; /* General corner radius. */
+    --theme-reply-radius: 2px 12px; /* Reply corner radius. */
+    --theme-control-radius: 5px; /* Form and button radius. */
+    --theme-shadow: 0 2px 6px rgba(55,70,75,.10); /* Panel shadow. */
+}

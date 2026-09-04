@@ -1,0 +1,40 @@
+/* Najdorf
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: dark; /* Browser color scheme. */
+    --theme-bg: #1b1814; /* Page background color. */
+    --theme-bg-image: linear-gradient(135deg, rgba(255,155,60,.055), transparent 45%); /* Optional page gradient or image. */
+    --theme-text: #f1e9de; /* Main text. */
+    --theme-link: #ffc27a; /* Links and secondary actions. */
+    --theme-hover: #ff8b3d; /* Hovered links. */
+    --theme-muted: #b8aa98; /* Quiet metadata. */
+    --theme-nav: #b8aa98; /* Board navigation. */
+    --theme-heading: #ff8b3d; /* Board and page headings. */
+    --theme-panel: #2d261e; /* Reply boxes and utility panels. */
+    --theme-border: #69533c; /* Main borders. */
+    --theme-line: #69533c; /* Subtle separators. */
+    --theme-surface: #221d17; /* Raised content surfaces. */
+    --theme-accent: #87562b; /* Section title bars. */
+    --theme-accent-text: #ffffff; /* Text on accent bars. */
+    --theme-input: #221d17; /* Input background. */
+    --theme-input-border: #69533c; /* Input borders. */
+    --theme-subject: #ffd09a; /* Post subjects. */
+    --theme-name: #83d2a2; /* Poster names. */
+    --theme-quote: #bdc977; /* Greentext. */
+    --theme-button: #2d261e; /* Button face. */
+    --theme-button-border: #69533c; /* Button border. */
+    --theme-button-hover: #87562b; /* Hovered button. */
+    --theme-card-hover: #87562b; /* Hovered cards. */
+    --theme-pgn: #221d17; /* PGN block background. */
+    --theme-pgn-border: #87562b; /* PGN accent border. */
+    --theme-font: Georgia, serif; /* Site font stack. */
+    --theme-heading-font: Georgia, serif; /* Heading font stack. */
+    --theme-heading-letter-spacing: 0; /* Heading spacing. */
+    --theme-radius: 4px; /* General corner radius. */
+    --theme-reply-radius: 4px; /* Reply corner radius. */
+    --theme-control-radius: 3px; /* Form and button radius. */
+    --theme-shadow: 0 2px 7px rgba(0,0,0,.32); /* Panel shadow. */
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+	<title>/b/ - Random</title>
+	<link>/b/</link>
+	<description>Live feed of new threads on the board /b/ - Random.</description>
+	<atom:link href="/b/index.rss" rel="self" type="application/rss+xml"/>
+	
+</channel>
+</rss>

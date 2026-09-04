@@ -1,0 +1,40 @@
+/* Ruy Lopez
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: light; /* Browser color scheme. */
+    --theme-bg: #f8eeee; /* Page background color. */
+    --theme-bg-image: linear-gradient(180deg, rgba(190,130,70,.13), transparent 250px); /* Optional page gradient or image. */
+    --theme-text: #291919; /* Main text. */
+    --theme-link: #6a3037; /* Links and secondary actions. */
+    --theme-hover: #b6263a; /* Hovered links. */
+    --theme-muted: #745f61; /* Quiet metadata. */
+    --theme-nav: #745f61; /* Board navigation. */
+    --theme-heading: #8f1f2f; /* Board and page headings. */
+    --theme-panel: #ecd5d7; /* Reply boxes and utility panels. */
+    --theme-border: #cba9ad; /* Main borders. */
+    --theme-line: #cba9ad; /* Subtle separators. */
+    --theme-surface: #fffafa; /* Raised content surfaces. */
+    --theme-accent: #c47e88; /* Section title bars. */
+    --theme-accent-text: #000000; /* Text on accent bars. */
+    --theme-input: #ffffff; /* Input background. */
+    --theme-input-border: #cba9ad; /* Input borders. */
+    --theme-subject: #6a2b36; /* Post subjects. */
+    --theme-name: #2d7052; /* Poster names. */
+    --theme-quote: #687b21; /* Greentext. */
+    --theme-button: #ecd5d7; /* Button face. */
+    --theme-button-border: #cba9ad; /* Button border. */
+    --theme-button-hover: #c47e88; /* Hovered button. */
+    --theme-card-hover: #c47e88; /* Hovered cards. */
+    --theme-pgn: #fffafa; /* PGN block background. */
+    --theme-pgn-border: #c47e88; /* PGN accent border. */
+    --theme-font: Georgia, "Times New Roman", serif; /* Site font stack. */
+    --theme-heading-font: Georgia, serif; /* Heading font stack. */
+    --theme-heading-letter-spacing: 0; /* Heading spacing. */
+    --theme-radius: 4px; /* General corner radius. */
+    --theme-reply-radius: 4px; /* Reply corner radius. */
+    --theme-control-radius: 2px; /* Form and button radius. */
+    --theme-shadow: 0 1px 3px rgba(80,55,25,.12); /* Panel shadow. */
+}

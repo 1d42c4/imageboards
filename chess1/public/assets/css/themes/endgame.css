@@ -1,0 +1,40 @@
+/* Endgame
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: light; /* Browser color scheme. */
+    --theme-bg: #ffffff; /* Page background color. */
+    --theme-bg-image: none; /* Optional page gradient or image. */
+    --theme-text: #000000; /* Main text. */
+    --theme-link: #000066; /* Links and secondary actions. */
+    --theme-hover: #c00000; /* Hovered links. */
+    --theme-muted: #4d4d4d; /* Quiet metadata. */
+    --theme-nav: #4d4d4d; /* Board navigation. */
+    --theme-heading: #7a0000; /* Board and page headings. */
+    --theme-panel: #eeeeee; /* Reply boxes and utility panels. */
+    --theme-border: #8a8a8a; /* Main borders. */
+    --theme-line: #8a8a8a; /* Subtle separators. */
+    --theme-surface: #ffffff; /* Raised content surfaces. */
+    --theme-accent: #c7c7c7; /* Section title bars. */
+    --theme-accent-text: #000000; /* Text on accent bars. */
+    --theme-input: #ffffff; /* Input background. */
+    --theme-input-border: #8a8a8a; /* Input borders. */
+    --theme-subject: #000055; /* Post subjects. */
+    --theme-name: #006b3d; /* Poster names. */
+    --theme-quote: #4f7100; /* Greentext. */
+    --theme-button: #eeeeee; /* Button face. */
+    --theme-button-border: #8a8a8a; /* Button border. */
+    --theme-button-hover: #c7c7c7; /* Hovered button. */
+    --theme-card-hover: #c7c7c7; /* Hovered cards. */
+    --theme-pgn: #ffffff; /* PGN block background. */
+    --theme-pgn-border: #c7c7c7; /* PGN accent border. */
+    --theme-font: Arial, Helvetica, sans-serif; /* Site font stack. */
+    --theme-heading-font: Arial, Helvetica, sans-serif; /* Heading font stack. */
+    --theme-heading-letter-spacing: -.05em; /* Heading spacing. */
+    --theme-radius: 0; /* General corner radius. */
+    --theme-reply-radius: 0; /* Reply corner radius. */
+    --theme-control-radius: 0; /* Form and button radius. */
+    --theme-reply-border-width: 1px; /* Reply border widths. */
+}

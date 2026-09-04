@@ -1,0 +1,4 @@
+{# When included from fileinfo, `post` is the file entry.
+   Keep attributes on one line: parent templates use spaceless.
+   No target=_blank — inline-expanding.js toggles size on click. #}
+<a href="{{ config.uri_img }}{{ post.file }}" class="file-link{% if post.thumb == 'file' or post.modifiers['is_file'] == '1' %} file{% endif %}"><img class="post-image" src="{% if post.thumb == 'file' %}{{ config.root }}{% if config.file_icons[post.filename|extension] %}{{ config.file_thumb|sprintf(config.file_icons[post.filename|extension]) }}{% else %}{{ config.file_thumb|sprintf(config.file_icons.default) }}{% endif %}{% elseif post.thumb == 'spoiler' %}{{ config.root }}{{ config.spoiler_image }}{% else %}{{ config.uri_thumb }}{{ post.thumb }}{% endif %}" width="{{ post.thumbwidth }}" height="{{ post.thumbheight }}" alt=""{% if config.content_lazy_loading %} loading="lazy"{% endif %}/></a>

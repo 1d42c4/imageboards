@@ -1,0 +1,40 @@
+/* Italian Game
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: light; /* Browser color scheme. */
+    --theme-bg: #fbf0e7; /* Page background color. */
+    --theme-bg-image: radial-gradient(circle at top center, rgba(190,140,75,.16), transparent 30rem); /* Optional page gradient or image. */
+    --theme-text: #2b1c14; /* Main text. */
+    --theme-link: #6c4027; /* Links and secondary actions. */
+    --theme-hover: #b64b25; /* Hovered links. */
+    --theme-muted: #766457; /* Quiet metadata. */
+    --theme-nav: #766457; /* Board navigation. */
+    --theme-heading: #a04424; /* Board and page headings. */
+    --theme-panel: #efd9c8; /* Reply boxes and utility panels. */
+    --theme-border: #d0ad92; /* Main borders. */
+    --theme-line: #d0ad92; /* Subtle separators. */
+    --theme-surface: #fffaf5; /* Raised content surfaces. */
+    --theme-accent: #d19367; /* Section title bars. */
+    --theme-accent-text: #000000; /* Text on accent bars. */
+    --theme-input: #ffffff; /* Input background. */
+    --theme-input-border: #d0ad92; /* Input borders. */
+    --theme-subject: #704126; /* Post subjects. */
+    --theme-name: #2d704e; /* Poster names. */
+    --theme-quote: #6b791c; /* Greentext. */
+    --theme-button: #efd9c8; /* Button face. */
+    --theme-button-border: #d0ad92; /* Button border. */
+    --theme-button-hover: #d19367; /* Hovered button. */
+    --theme-card-hover: #d19367; /* Hovered cards. */
+    --theme-pgn: #fffaf5; /* PGN block background. */
+    --theme-pgn-border: #d19367; /* PGN accent border. */
+    --theme-font: "Trebuchet MS", Arial, sans-serif; /* Site font stack. */
+    --theme-heading-font: Georgia, serif; /* Heading font stack. */
+    --theme-heading-letter-spacing: .01em; /* Heading spacing. */
+    --theme-radius: 8px; /* General corner radius. */
+    --theme-reply-radius: 8px 0 8px 0; /* Reply corner radius. */
+    --theme-control-radius: 6px; /* Form and button radius. */
+    --theme-image-radius: 5px; /* Image corner radius. */
+}

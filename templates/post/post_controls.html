@@ -1,0 +1,47 @@
+{% if mod %}
+<span class="controls {% if not post.thread %}op{% endif %}">
+{% if mod|hasPermission(config.mod.delete, board.uri) %}
+	<a title="{% trans %}Delete{% endtrans %}" href="?/{{ board.dir }}delete/{{ post.id }}/{{ delete_token }}" onclick="return confirm('{% trans %}Are you sure you want to delete this?{% endtrans %}');">{{ config.mod.link_delete }}</a>&nbsp;
+{% endif %}
+{% if config.privacy.store_ip and mod|hasPermission(config.mod.deletebyip, board.uri) %}
+	<a title="{% trans %}Delete all posts by IP{% endtrans %}" href="?/{{ board.dir }}deletebyip/{{ post.id }}/{{ deletebyip_token }}" onclick="return confirm('{% trans %}Are you sure you want to delete all posts by this IP address?{% endtrans %}');">{{ config.mod.link_deletebyip }}</a>&nbsp;
+{% endif %}
+{% if config.privacy.store_ip and mod|hasPermission(config.mod.ban, board.uri) %}
+	<a title="{% trans %}Ban{% endtrans %}" href="?/{{ board.dir }}ban/{{ post.id }}">{{ config.mod.link_ban }}</a>&nbsp;
+{% endif %}
+{% if config.privacy.store_ip and mod|hasPermission(config.mod.bandelete, board.uri) %}
+	<a title="{% trans %}Ban &amp; Delete{% endtrans %}" href="?/{{ board.dir }}ban&amp;delete/{{ post.id }}">{{ config.mod.link_bandelete }}</a>&nbsp;
+{% endif %}
+
+{% if not post.thread %}
+{% if mod|hasPermission(config.mod.sticky, board.uri) %}
+	{% if post.sticky %}
+	<a title="{% trans %}Make thread not sticky{% endtrans %}" href="?/{{ board.dir }}unsticky/{{ post.id }}/{{ unsticky_token }}">{{ config.mod.link_desticky }}</a>&nbsp;
+	{% else %}
+	<a title="{% trans %}Make thread sticky{% endtrans %}" href="?/{{ board.dir }}sticky/{{ post.id }}/{{ sticky_token }}">{{ config.mod.link_sticky }}</a>&nbsp;
+	{% endif %}
+{% endif %}
+{% if mod|hasPermission(config.mod.bumplock, board.uri) %}
+	{% if post.sage %}
+	<a title="{% trans %}Allow thread to be bumped{% endtrans %}" href="?/{{ board.dir }}bumpunlock/{{ post.id }}/{{ bumpunlock_token }}">{{ config.mod.link_bumpunlock }}</a>&nbsp;
+	{% else %}
+	<a title="{% trans %}Prevent thread from being bumped{% endtrans %}" href="?/{{ board.dir }}bumplock/{{ post.id }}/{{ bumplock_token }}">{{ config.mod.link_bumplock }}</a>&nbsp;
+	{% endif %}
+{% endif %}
+{% if mod|hasPermission(config.mod.lock, board.uri) %}
+	{% if post.locked %}
+	<a title="{% trans %}Unlock thread{% endtrans %}" href="?/{{ board.dir }}unlock/{{ post.id }}/{{ unlock_token }}">{{ config.mod.link_unlock }}</a>&nbsp;
+	{% else %}
+	<a title="{% trans %}Lock thread{% endtrans %}" href="?/{{ board.dir }}lock/{{ post.id }}/{{ lock_token }}">{{ config.mod.link_lock }}</a>&nbsp;
+	{% endif %}
+{% endif %}
+{% if config.archive.enabled and mod|hasPermission(config.mod.archive, board.uri) %}
+	<a title="{% trans %}Move thread to read-only archive{% endtrans %}" href="?/{{ board.dir }}archive/{{ post.id }}/{{ archive_token }}" onclick="return confirm('{% trans %}Archive this thread? It will leave the board and become read-only.{% endtrans %}');">{{ config.mod.link_archive }}</a>&nbsp;
+{% endif %}
+{% endif %}
+
+{% if mod|hasPermission(config.mod.editpost, board.uri) %}
+	<a title="{% trans %}Edit post{% endtrans %}" href="?/{{ board.dir }}edit/{{ post.id }}">{{ config.mod.link_editpost }}</a>&nbsp;
+{% endif %}
+</span>
+{% endif %}

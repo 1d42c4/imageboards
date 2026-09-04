@@ -1,0 +1,214 @@
+/* Classic Yotsuba (green) style */
+
+body {
+    font-family: "Trebuchet MS", Tahoma, Verdana, Arial, sans-serif;
+    font-size: 10pt;
+    color: #800000;
+    background: #ffffee;
+    margin: 0;
+    padding: 8px;
+}
+
+a {
+    color: #0000ee;
+}
+a:hover {
+    color: #dd0000;
+}
+
+.boardbanner {
+    text-align: center;
+    margin-bottom: 8px;
+}
+.boardtitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #800000;
+    letter-spacing: -1px;
+}
+.boardsubtitle {
+    font-size: 12px;
+    color: #800000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #d9bfb7;
+    height: 0;
+    margin: 8px 0;
+}
+
+/* Post form */
+.postarea {
+    margin: 0 auto 4px auto;
+    text-align: center;
+}
+.postarea table {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+.postblock {
+    background: #eeaa88;
+    color: #800000;
+    font-weight: bold;
+    padding: 0 8px;
+    border: 1px solid #800000;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: top;
+}
+.postarea td {
+    vertical-align: middle;
+    padding: 1px 2px;
+}
+.postarea input[type="text"],
+.postarea input[type="password"],
+.postarea input[type="file"],
+.postarea textarea {
+    border: 1px solid #aaa;
+    background: #fff;
+    color: #000;
+    font-family: inherit;
+    font-size: 10pt;
+    margin: 0;
+    vertical-align: middle;
+}
+.postarea textarea {
+    vertical-align: top;
+}
+.postarea input[type="submit"] {
+    margin-left: 4px;
+    vertical-align: middle;
+}
+.passhint {
+    font-size: 8pt;
+    color: #707070;
+}
+
+/* Posts */
+.op {
+    margin-bottom: 4px;
+}
+.filetitle, .replytitle {
+    color: #cc1105;
+    font-weight: bold;
+}
+.postername, .commentpostername {
+    color: #117743;
+    font-weight: bold;
+}
+.postertrip {
+    color: #117743;
+}
+.filesize {
+    font-size: 9pt;
+}
+.filesize a {
+    text-decoration: underline;
+}
+.thumb {
+    float: left;
+    margin: 2px 20px 4px 0;
+    border: none;
+}
+.omittedposts {
+    color: #707070;
+    font-style: italic;
+}
+blockquote {
+    margin: 12px 40px;
+}
+.quote {
+    color: #789922;
+}
+.quotelink {
+    color: #dd0000;
+}
+.spoiler {
+    background: #000;
+    color: #000;
+}
+.spoiler:hover {
+    color: #fff;
+}
+.spoiler-thumb {
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 125px;
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    margin: 2px 20px 4px 0;
+}
+
+/* Reply table layout (classic) */
+table.reply {
+    border-spacing: 0;
+    margin: 4px 0;
+}
+td.doubledash {
+    width: 20px;
+    text-align: center;
+    vertical-align: top;
+    color: #b7c5d9;
+    font-size: 12pt;
+}
+td.reply {
+    background: #f0e0d6;
+    border: 1px solid #d9bfb7;
+    padding: 2px 4px;
+    vertical-align: top;
+}
+
+/* Delete box */
+.deletebox {
+    float: right;
+    font-size: 9pt;
+}
+.deletebox td {
+    background: #f0e0d6;
+    border: 1px solid #d9bfb7;
+    padding: 4px 8px;
+}
+
+/* Pagination */
+.pages {
+    clear: both;
+    margin-top: 12px;
+    font-size: 10pt;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 8pt;
+    color: #707070;
+    margin-top: 16px;
+}
+
+/* Error */
+.error {
+    background: #f0e0d6;
+    border: 1px solid #d9bfb7;
+    padding: 12px;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+    color: #800000;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .thumb {
+        max-width: 40vw;
+        height: auto;
+    }
+    blockquote {
+        margin: 8px 10px;
+    }
+}

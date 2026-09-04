@@ -1,0 +1,3 @@
+{% if config.privacy.store_ip and post.mod and post.mod|hasPermission(config.mod.show_ip, board.uri) and post.ip %}
+	 [<span class="ip-link" style="margin:0;" title="{% trans %}Stored post IP (tools are limited when IPs are optional){% endtrans %}">{{ post.ip|cloak_ip }}</span>]
+{% endif %}

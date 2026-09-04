@@ -1,0 +1,45 @@
+# Include these locations in the server block that serves TinyIB.
+# Adjust the PHP-FPM socket and URI prefix for your installation.
+
+index index.html;
+charset utf-8;
+
+location / {
+	try_files $uri $uri/ =404;
+}
+
+location = /imgboard.php {
+	include fastcgi_params;
+	fastcgi_pass unix:/run/php/php8.5-fpm.sock;
+	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+}
+
+location = /inc/captcha.php {
+	include fastcgi_params;
+	fastcgi_pass unix:/run/php/php8.5-fpm.sock;
+	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+}
+
+location = /settings.php {
+	deny all;
+}
+
+location = /tinyib.lock {
+	deny all;
+}
+
+location ~ \.db(?:-wal|-shm)?$ {
+	deny all;
+}
+
+location ~ /\.(?!well-known(?:/|$)) {
+	deny all;
+}
+
+location ^~ /inc/ {
+	deny all;
+}
+
+location ~ \.php$ {
+	return 404;
+}

@@ -1,0 +1,41 @@
+/* Yotsuba B
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: light; /* Browser color scheme. */
+    --theme-bg: #eadef6; /* Page background color. */
+    --theme-bg-image: url("images/yotsuba-b.png"); /* Optional page gradient or image. */
+    --theme-bg-repeat: repeat-x; /* Background repetition. */
+    --theme-bg-position: top center; /* Background position. */
+    --theme-text: #20152a; /* Main text. */
+    --theme-link: #6100ab; /* Links and secondary actions. */
+    --theme-hover: #fb35dd; /* Hovered links. */
+    --theme-muted: #79668e; /* Quiet metadata. */
+    --theme-nav: #8e66bb; /* Board navigation. */
+    --theme-heading: #800075; /* Board and page headings. */
+    --theme-panel: #e0d6f0; /* Reply boxes and utility panels. */
+    --theme-border: #a49db3; /* Main borders. */
+    --theme-line: #c8b9da; /* Subtle separators. */
+    --theme-surface: #f8f2ff; /* Raised content surfaces. */
+    --theme-accent: #ac88ee; /* Section title bars. */
+    --theme-accent-text: #2a123d; /* Text on accent bars. */
+    --theme-input: #ffffff; /* Input background. */
+    --theme-input-border: #9f82b8; /* Input borders. */
+    --theme-subject: #8200dd; /* Post subjects. */
+    --theme-name: #2c7155; /* Poster names. */
+    --theme-quote: #63821f; /* Greentext. */
+    --theme-button: #e2d6f0; /* Button face. */
+    --theme-button-border: #a49db3; /* Button border. */
+    --theme-button-hover: #c8b0f0; /* Hovered button. */
+    --theme-card-hover: #c8b0f0; /* Hovered cards. */
+    --theme-pgn: rgba(248,242,255,.86); /* PGN block background. */
+    --theme-pgn-border: #ac88ee; /* PGN accent border. */
+    --theme-heading-font: Tahoma, Arial, sans-serif; /* Heading font stack. */
+    --theme-heading-letter-spacing: -1px; /* Heading spacing. */
+    --theme-radius: 0; /* General corner radius. */
+    --theme-reply-radius: 0; /* Reply corner radius. */
+    --theme-control-radius: 0; /* Form and button radius. */
+    --theme-reply-border-width: 0 1px 1px 0; /* Reply border widths. */
+}

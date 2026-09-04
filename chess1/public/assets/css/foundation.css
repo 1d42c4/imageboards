@@ -1,0 +1,147 @@
+:root {
+    --text-weight: 400;
+    color: #000;
+    background: #eef2ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-synthesis: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-width: 300px;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0 4px;
+    padding: 0 4px;
+    color: #000;
+    background: #eef2ff;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: inherit;
+}
+
+a,
+a:visited {
+    color: #34345c;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #d00;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+code,
+pre {
+    font-family: Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+.skip-link {
+    position: fixed;
+    z-index: 1000;
+    top: 2px;
+    left: 2px;
+    padding: 3px 6px;
+    color: #fff;
+    background: #34345c;
+    transform: translateY(-150%);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+.board-list {
+    min-height: 18px;
+    margin-top: 3px;
+    color: #89a;
+    font-size: 0.9rem;
+}
+
+.board-list a {
+    text-decoration: none;
+}
+
+.board-list__staff {
+    float: right;
+}
+
+.page {
+    min-height: calc(100vh - 60px);
+}
+
+.footer {
+    clear: both;
+    padding: 10px 0 6px;
+    text-align: center;
+    font-size: 0.675rem;
+}
+
+.board-heading {
+    clear: both;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.board-heading h1 {
+    margin: 0;
+    color: #af0a0f;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    letter-spacing: -1px;
+}
+
+.board-subtitle {
+    color: #af0a0f;
+    font-size: 0.8rem;
+}
+
+.board-rule {
+    clear: both;
+    height: 0;
+    margin: 7px 0;
+    border: 0;
+    border-top: 1px solid #b7c5d9;
+}
+
+.muted,
+.unimportant {
+    color: #707070;
+}
+
+.unimportant {
+    font-size: 0.75rem;
+}
+
+.eyebrow {
+    margin: 0 0 3px;
+    color: #707070;
+    font-size: 0.675rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+

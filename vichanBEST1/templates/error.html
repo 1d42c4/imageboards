@@ -1,0 +1,17 @@
+<div style="text-align:center">
+	{# message is escaped in error() unless allow_html was set for trusted fragments #}
+	<h2 style="margin:20px 0">{{ message }}</h2>
+	{% if board %}
+		<p>
+			<a href="{{ config.root|e }}{% if mod %}{{ config.file_mod|e }}?/{% endif %}{{ board.dir|e }}{{ config.file_index|e }}">
+				{% trans 'Go back' %}
+			</a>
+		</p>
+	{% endif %}
+</div>
+{% if debug and config.debug %}
+	<hr>
+	<h3>{% trans 'Error information' %}</h3>
+	<pre style="white-space:pre-wrap;font-size: 10px;">{{ debug }}</pre>
+	<hr>
+{% endif %}

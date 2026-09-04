@@ -1,0 +1,39 @@
+/* Caro-Kann
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: light; /* Browser color scheme. */
+    --theme-bg: #e9f5f4; /* Page background color. */
+    --theme-text: #102625; /* Main text. */
+    --theme-link: #17605b; /* Links and secondary actions. */
+    --theme-hover: #a34035; /* Hovered links. */
+    --theme-muted: #596f6d; /* Quiet metadata. */
+    --theme-nav: #596f6d; /* Board navigation. */
+    --theme-heading: #8a3a30; /* Board and page headings. */
+    --theme-panel: #d3e9e7; /* Reply boxes and utility panels. */
+    --theme-border: #9fc4c0; /* Main borders. */
+    --theme-line: #9fc4c0; /* Subtle separators. */
+    --theme-surface: #f8fffe; /* Raised content surfaces. */
+    --theme-accent: #7db6b0; /* Section title bars. */
+    --theme-accent-text: #000000; /* Text on accent bars. */
+    --theme-input: #ffffff; /* Input background. */
+    --theme-input-border: #9fc4c0; /* Input borders. */
+    --theme-subject: #1d5b57; /* Post subjects. */
+    --theme-name: #236e52; /* Poster names. */
+    --theme-quote: #607a20; /* Greentext. */
+    --theme-button: #d3e9e7; /* Button face. */
+    --theme-button-border: #9fc4c0; /* Button border. */
+    --theme-button-hover: #7db6b0; /* Hovered button. */
+    --theme-card-hover: #7db6b0; /* Hovered cards. */
+    --theme-pgn: #f8fffe; /* PGN block background. */
+    --theme-pgn-border: #7db6b0; /* PGN accent border. */
+    --theme-font: Verdana, Arial, sans-serif; /* Site font stack. */
+    --theme-heading-font: Verdana, Arial, sans-serif; /* Heading font stack. */
+    --theme-heading-letter-spacing: -.04em; /* Heading spacing. */
+    --theme-radius: 2px; /* General corner radius. */
+    --theme-reply-radius: 2px 10px 2px 10px; /* Reply corner radius. */
+    --theme-control-radius: 2px; /* Form and button radius. */
+    --theme-reply-border-width: 1px 3px 3px 1px; /* Reply border widths. */
+}

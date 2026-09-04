@@ -1,0 +1,100 @@
+/* Notices */
+
+.flash-stack {
+    margin: 5px auto;
+    text-align: center;
+}
+
+.flash {
+    display: inline-block;
+    padding: 3px 8px;
+    color: #000;
+    background: #d6daf0;
+    border: 1px solid #b7c5d9;
+}
+
+.flash--error {
+    color: #800;
+    background: #f0c0b0;
+    border-color: #d99f97;
+}
+
+.flash--success {
+    color: #174f28;
+    background: #d8ead8;
+    border-color: #9cba9c;
+}
+
+/* Home and simple content boxes */
+
+.board-heading--home {
+    margin-top: 2em;
+}
+
+.board-index,
+.box {
+    width: min(720px, 96%);
+    margin: 30px auto 12px;
+    background: #fff;
+    border: 1px solid #98e;
+}
+
+.box-title,
+.board-index > h2 {
+    margin: 0;
+    padding: 3px 7px;
+    color: #000;
+    background: #98e;
+    font-size: 1.1rem;
+}
+
+.home-note {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.board-table {
+    width: 100%;
+}
+
+.board-table th,
+.board-table td {
+    padding: 5px 7px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #d8deef;
+}
+
+.board-table th {
+    color: #34345c;
+    background: #d6daf0;
+    font-size: 0.9rem;
+}
+
+.board-table td:nth-last-child(-n + 2),
+.board-table th:nth-last-child(-n + 2) {
+    width: 70px;
+    text-align: center;
+}
+
+.board-table td:first-child {
+    white-space: nowrap;
+}
+
+.board-table td:first-child strong {
+    color: #af0a0f;
+}
+
+.board-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+

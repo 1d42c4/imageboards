@@ -1,0 +1,95 @@
+/* Visitor-controlled reading preferences. These choices stay in localStorage. */
+
+html[data-text-size="small"] { font-size: 8.8pt; }
+html[data-text-size="compact"] { font-size: 9.4pt; }
+html[data-text-size="normal"] { font-size: 10pt; }
+html[data-text-size="large"] { font-size: 11.2pt; }
+html[data-text-size="xlarge"] { font-size: 12.5pt; }
+html[data-text-weight="normal"] { --text-weight: 400; }
+html[data-text-weight="strong"] { --text-weight: 600; }
+
+body,
+button,
+input,
+select,
+textarea {
+    font-weight: var(--text-weight);
+}
+
+.style-switcher,
+.reading-controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    margin-right: 7px;
+    color: var(--theme-muted);
+    font-size: 0.675rem;
+    vertical-align: middle;
+}
+
+.style-switcher select {
+    width: min(156px, 38vw);
+    min-height: 18px;
+    padding: 0 2px;
+    font-size: 0.675rem;
+}
+
+.reading-controls {
+    gap: 2px;
+}
+
+.reading-control {
+    min-width: 24px;
+    min-height: 19px;
+    padding: 0 3px;
+    color: var(--theme-link);
+    background: var(--theme-panel);
+    border: 1px solid var(--theme-border);
+    border-radius: var(--theme-control-radius);
+    cursor: pointer;
+    font-size: 0.675rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.reading-control:hover,
+.reading-control[aria-pressed="true"] {
+    color: var(--theme-text);
+    background: var(--theme-accent);
+}
+
+.reading-control[aria-pressed="true"] {
+    border-style: inset;
+}
+
+.reading-control:disabled {
+    cursor: not-allowed;
+    opacity: 0.38;
+}
+
+@media (max-width: 520px) {
+    .board-list__staff {
+        float: none;
+        display: block;
+        margin-top: 2px;
+        text-align: right;
+    }
+
+    .post-form__identity {
+        grid-template-columns: 1fr;
+    }
+
+    .post-form__footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .post-form__file {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .post-form__file input[type="file"] {
+        max-width: 100%;
+    }
+}

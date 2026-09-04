@@ -1,0 +1,28 @@
+{
+    "threads": [
+        {
+            "id": 1,
+            "parent": 0,
+            "timestamp": 1785390476,
+            "bumped": 1785390476,
+            "name": "Tester",
+            "tripcode": "",
+            "subject": "Hello",
+            "message": "Smoke post from PHP 8.5<br>",
+            "file": "",
+            "file_hex": "",
+            "file_original": "",
+            "file_size": 0,
+            "file_size_formated": "",
+            "image_width": 0,
+            "image_height": 0,
+            "thumb": "",
+            "thumb_width": 0,
+            "thumb_height": 0,
+            "stickied": 0,
+            "locked": 0,
+            "replies": 0,
+            "images": 0
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+<p class="unimportant">{% trans %}These posts are held until a moderator approves them. Reject deletes the post (and its files).{% endtrans %}</p>
+
+{% if not posts %}
+	<p><em>{% trans %}No posts waiting for approval.{% endtrans %}</em></p>
+{% else %}
+	{% for item in posts %}
+	<div class="ban" style="margin-bottom:1.2em;">
+		<p>
+			<strong>{{ config.board_abbreviation|sprintf(item.board) }}</strong>
+			{% if item.thread %}
+				— {% trans %}Reply{% endtrans %}
+				<a href="?/{{ item.board }}/{{ config.dir.res }}{{ item.thread }}.html#{{ item.id }}">No.{{ item.id }}</a>
+				({% trans %}thread{% endtrans %} <a href="?/{{ item.board }}/{{ config.dir.res }}{{ item.thread }}.html">{{ item.thread }}</a>)
+			{% else %}
+				— {% trans %}New thread{% endtrans %}
+				No.{{ item.id }}
+			{% endif %}
+			— <time>{{ item.time|date(config.post_date) }}</time>
+			— {{ item.name|e }}
+			{% if item.subject %}<strong>{{ item.subject|e }}</strong>{% endif %}
+		</p>
+		<div class="body" style="margin:0.5em 0;max-height:12em;overflow:auto;">{{ item.body }}</div>
+		{% if item.files_html %}
+			<div class="files">{{ item.files_html }}</div>
+		{% endif %}
+		<p>
+			<a class="unimportant" href="?/pending/{{ item.board }}/{{ item.id }}/approve/{{ item.approve_token }}"
+				style="font-weight:bold;">{% trans %}Approve{% endtrans %}</a>
+			&nbsp;|&nbsp;
+			<a class="unimportant" href="?/pending/{{ item.board }}/{{ item.id }}/reject/{{ item.reject_token }}"
+				onclick="return confirm('{% trans %}Reject and delete this post?{% endtrans %}');">{% trans %}Reject{% endtrans %}</a>
+		</p>
+	</div>
+	{% endfor %}
+{% endif %}

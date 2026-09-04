@@ -1,0 +1,12 @@
+{
+    "name": "sutaba/sutaba",
+    "description": "A standalone SQLite3 imageboard for PHP 8.5.8+",
+    "type": "project",
+    "require": {
+        "php": ">=8.5.8",
+        "ext-fileinfo": "*",
+        "ext-gd": "*",
+        "ext-mbstring": "*",
+        "ext-sqlite3": "*"
+    }
+}

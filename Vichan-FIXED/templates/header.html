@@ -1,0 +1,17 @@
+<link rel="stylesheet" media="screen" href="{{ config.url_stylesheet }}?v={{ config.resource_version }}">
+{% if config.url_favicon %}<link rel="shortcut icon" href="{{ config.url_favicon }}">{% endif %}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+{% if config.meta_keywords %}<meta name="keywords" content="{{ config.meta_keywords }}">{% endif %}
+{% if config.default_stylesheet.1 != '' %}<link rel="stylesheet" type="text/css" id="stylesheet" href="{{ config.uri_stylesheets }}{{ config.default_stylesheet.1 }}?v={{ config.resource_version }}">{% endif %}
+<script type="text/javascript">
+	var configRoot="{{ config.root }}";
+	var inMod = {% if mod %} true {% else %} false {% endif %};
+	var modRoot = "{{ config.root }}" + (inMod ? "mod.php?/" : "");
+</script>
+{% if not nojavascript %}
+	<script type="text/javascript" src="{{ config.url_javascript }}?v={{ config.resource_version }}" data-resource-version="{{ config.resource_version }}"></script>
+	{% for javascript in config.additional_javascript %}<script type="text/javascript" src="{{ config.additional_javascript_url }}{{ javascript }}?v={{ config.resource_version }}"></script>{% endfor %}
+{% endif %}
+{% if config.captcha.provider == 'recaptcha' %}<script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>{% endif %}
+{% if config.captcha.provider == 'hcaptcha' %}<script src="https://js.hcaptcha.com/1/api.js" async defer></script>{% endif %}

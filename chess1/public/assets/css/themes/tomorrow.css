@@ -1,0 +1,40 @@
+/* Tomorrow
+ *
+ * Edit the variables below to change only this theme. Shared layout rules live
+ * in ../theme-engine.css, so a palette cannot accidentally break the board.
+ */
+:root {
+    --theme-scheme: dark; /* Browser color scheme. */
+    --theme-bg: #1d1f21; /* Page background color. */
+    --theme-text: #c5c8c6; /* Main text. */
+    --theme-link: #81a2be; /* Links and secondary actions. */
+    --theme-hover: #5f89ac; /* Hovered links. */
+    --theme-muted: #969896; /* Quiet metadata. */
+    --theme-nav: #c5c8c6; /* Board navigation. */
+    --theme-heading: #c5c8c6; /* Board and page headings. */
+    --theme-panel: #282a2e; /* Reply boxes and utility panels. */
+    --theme-border: #111111; /* Main borders. */
+    --theme-line: #373b41; /* Subtle separators. */
+    --theme-surface: #202225; /* Raised content surfaces. */
+    --theme-accent: #373b41; /* Section title bars. */
+    --theme-accent-text: #f8f8f2; /* Text on accent bars. */
+    --theme-input: #202225; /* Input background. */
+    --theme-input-border: #4a4d50; /* Input borders. */
+    --theme-subject: #b294bb; /* Post subjects. */
+    --theme-name: #c5c8c6; /* Poster names. */
+    --theme-quote: #adbd68; /* Greentext. */
+    --theme-button: #282a2e; /* Button face. */
+    --theme-button-border: #111111; /* Button border. */
+    --theme-button-hover: #373b41; /* Hovered button. */
+    --theme-card-hover: #373b41; /* Hovered cards. */
+    --theme-pgn: #202225; /* PGN block background. */
+    --theme-pgn-border: #b294bb; /* PGN accent border. */
+    --theme-font: Arial, Helvetica, sans-serif; /* Site font stack. */
+    --theme-heading-font: Arial, Helvetica, sans-serif; /* Heading font stack. */
+    --theme-heading-letter-spacing: -.03em; /* Heading spacing. */
+    --theme-radius: 0; /* General corner radius. */
+    --theme-reply-radius: 0; /* Reply corner radius. */
+    --theme-control-radius: 0; /* Form and button radius. */
+    --theme-shadow: none; /* Panel shadow. */
+    --theme-reply-border-width: 1px; /* Reply border widths. */
+}

@@ -1,0 +1,404 @@
+/* Chesschan - jschan / Indiachan inspired clean style */
+
+:root {
+    --bg: #1a1a1a;
+    --bg-secondary: #222;
+    --post-bg: #2a2a2a;
+    --post-op: #2e2e2e;
+    --border: #3a3a3a;
+    --border-light: #444;
+    --text: #d4d4d4;
+    --text-muted: #999;
+    --name: #81a2be;
+    --subject: #b294bb;
+    --link: #81a2be;
+    --link-hover: #a1c2de;
+    --greentext: #789922;
+    --quote: #5f89ac;
+    --highlight: #3a3a2a;
+    --input-bg: #1e1e1e;
+    --input-border: #444;
+    --button-bg: #333;
+    --button-hover: #444;
+    --header-bg: #111;
+    --accent: #c9a227; /* chess gold */
+    --danger: #cc4444;
+    --success: #4a9c4a;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+/* Light theme alternative (uncomment or toggle via JS later) */
+/*
+:root {
+    --bg: #eef2ff;
+    --bg-secondary: #d6daf0;
+    --post-bg: #d6daf0;
+    --post-op: #d6daf0;
+    --border: #b7c5d9;
+    --border-light: #b7c5d9;
+    --text: #000;
+    --text-muted: #555;
+    --name: #117743;
+    --subject: #0f0c5d;
+    --link: #34345c;
+    --link-hover: #dd0000;
+    --greentext: #789922;
+    --quote: #d00;
+    --highlight: #f0e0d6;
+    --input-bg: #fff;
+    --input-border: #aaa;
+    --button-bg: #eee;
+    --button-hover: #ddd;
+    --header-bg: #d6daf0;
+    --accent: #af0a0f;
+}
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 14px;
+    line-height: 1.45;
+    min-height: 100vh;
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* ========== Header / Nav ========== */
+.topnav {
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 16px;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.topnav a {
+    color: var(--text-muted);
+}
+.topnav a:hover {
+    color: var(--accent);
+}
+
+.topnav .board-list {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.topnav .sep {
+    color: var(--border-light);
+}
+
+/* ========== Board Header ========== */
+.board-header {
+    text-align: center;
+    padding: 28px 16px 20px;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(to bottom, var(--header-bg), var(--bg));
+}
+
+.board-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: -0.5px;
+    margin-bottom: 4px;
+}
+
+.board-header .subtitle {
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+/* ========== Post Form ========== */
+.post-form-container {
+    max-width: 680px;
+    margin: 20px auto;
+    padding: 0 12px;
+}
+
+.post-form {
+    background: var(--post-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.post-form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.post-form td {
+    padding: 6px 0;
+    vertical-align: top;
+}
+
+.post-form .label {
+    width: 90px;
+    color: var(--text-muted);
+    font-size: 13px;
+    padding-right: 12px;
+    white-space: nowrap;
+}
+
+.post-form input[type="text"],
+.post-form input[type="password"],
+.post-form textarea,
+.post-form input[type="file"] {
+    width: 100%;
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    color: var(--text);
+    padding: 7px 10px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.post-form textarea {
+    min-height: 110px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.post-form input:focus,
+.post-form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.post-form .submit-row {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.btn {
+    background: var(--button-bg);
+    color: var(--text);
+    border: 1px solid var(--border-light);
+    padding: 7px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background 0.15s;
+}
+.btn:hover {
+    background: var(--button-hover);
+}
+.btn-primary {
+    background: var(--accent);
+    color: #111;
+    border-color: var(--accent);
+    font-weight: 600;
+}
+.btn-primary:hover {
+    filter: brightness(1.1);
+}
+
+/* ========== Threads / Posts ========== */
+.threads {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+.thread {
+    margin-bottom: 28px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 18px;
+}
+
+.post {
+    background: var(--post-bg);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    position: relative;
+    display: flex;
+    gap: 14px;
+}
+
+.post.op {
+    background: var(--post-op);
+    border-color: var(--border-light);
+}
+
+.post .file {
+    flex-shrink: 0;
+}
+
+.post .file a {
+    display: block;
+}
+
+.post .file img {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 3px;
+    border: 1px solid var(--border);
+}
+
+.post .file .fileinfo {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    max-width: 250px;
+    word-break: break-all;
+}
+
+.post .content {
+    flex: 1;
+    min-width: 0;
+}
+
+.post .meta {
+    font-size: 13px;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.post .name {
+    color: var(--name);
+    font-weight: 600;
+}
+
+.post .subject {
+    color: var(--subject);
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+.post .date {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.post .postnum {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+.post .postnum a {
+    color: var(--text-muted);
+}
+.post .postnum a:hover {
+    color: var(--link-hover);
+}
+
+.post .comment {
+    font-size: 14px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.post .comment .greentext {
+    color: var(--greentext);
+}
+
+.post .comment .quote-link {
+    color: var(--quote);
+    font-weight: 500;
+}
+.post .comment .quote-link:hover {
+    text-decoration: underline;
+}
+
+/* Replies container */
+.replies {
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+.omitted {
+    color: var(--text-muted);
+    font-size: 13px;
+    margin: 6px 0 6px 20px;
+}
+
+/* ========== Thread view specific ========== */
+.thread-view .post {
+    margin-bottom: 10px;
+}
+
+.backlink {
+    display: inline-block;
+    margin: 12px 0;
+    font-size: 13px;
+}
+
+/* ========== Footer ========== */
+.footer {
+    text-align: center;
+    padding: 30px 16px;
+    color: var(--text-muted);
+    font-size: 12px;
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+}
+
+/* ========== Utility ========== */
+.hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 16px 0;
+}
+
+.error {
+    background: #3a1a1a;
+    border: 1px solid var(--danger);
+    color: #ffaaaa;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.success {
+    background: #1a3a1a;
+    border: 1px solid var(--success);
+    color: #aaffaa;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .post {
+        flex-direction: column;
+    }
+    .post .file img {
+        max-width: 100%;
+    }
+    .replies {
+        margin-left: 8px;
+    }
+    .post-form .label {
+        display: block;
+        width: auto;
+        margin-bottom: 2px;
+    }
+    .post-form td {
+        display: block;
+    }
+}
