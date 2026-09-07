@@ -1,0 +1,2 @@
+<?php declare(strict_types=1); ?>
+<div class="mod-wrap table-scroll"><table class="mod data-table"><thead><tr><th>Time (UTC)</th><th>Staff</th><th>Action</th><th>Target</th></tr></thead><tbody><?php foreach ($entries as $entry): ?><tr><td><?= gmdate('Y-m-d H:i:s', (int) $entry['created']) ?></td><td><?= $v::e($entry['username'] ?? 'Former staff #' . $entry['actor']) ?></td><td><?= $v::e($entry['action']) ?></td><td><?= $v::e($entry['target']) ?></td></tr><?php endforeach ?></tbody></table></div>

@@ -1,0 +1,3 @@
+<?php declare(strict_types=1); ?>
+<div class="mod-wrap"><form class="compact" method="get" action="<?= $v->url('mod.php') ?>"><input type="hidden" name="view" value="posts"><input name="q" maxlength="100" value="<?= $v::e($query) ?>" aria-label="Search posts"> <button>Search</button></form><p>Showing up to 100 most recent matching posts.</p>
+<?php foreach ($posts as $post): ?><p>[<a href="<?= $v->url('mod.php?view=post&id=' . $post['id']) ?>">Manage /<?= $v::e($post['slug']) ?>/<?= $v::e($post['id']) ?></a>]</p><?= $v->post($post, true, true) ?><div class="clear"></div><hr><?php endforeach ?></div>

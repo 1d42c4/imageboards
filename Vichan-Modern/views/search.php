@@ -1,0 +1,3 @@
+<?php declare(strict_types=1); ?>
+<form class="center-text" action="<?= $v->url('search.php') ?>" method="get"><input name="q" type="search" maxlength="100" value="<?= $v::e($query) ?>" required aria-label="Search text"><input type="hidden" name="board" value="<?= $v::e($slug) ?>"> <button>Search</button></form>
+<?php if ($query !== ''): ?><p><?= count($posts) ?> results (up to 100).</p><?php foreach ($posts as $post): ?><p><a href="<?= $v->url($v->app->boards->postPath($post)) ?>">/<?= $v::e($post['slug']) ?>/ — <?= $v::e($post['subject'] ?: 'No. ' . $post['id']) ?></a></p><?= $v->post($post, true, true) ?><div class="clear"></div><?php endforeach ?><?php endif ?>

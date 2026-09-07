@@ -1,0 +1,2 @@
+<?php declare(strict_types=1); ?>
+<div class="mod-wrap"><form method="post" action="<?= $v->url('mod.php') ?>"><?= $v->csrf() ?><input type="hidden" name="action" value="password"><fieldset><legend>Change password</legend><label>Current password <input name="current_password" type="password" maxlength="128" autocomplete="current-password" required></label><label>New password <input name="new_password" type="password" minlength="12" maxlength="128" autocomplete="new-password" required></label><button>Change password and sign out all sessions</button></fieldset></form></div>

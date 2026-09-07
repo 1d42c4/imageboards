@@ -1,0 +1,10 @@
+/var/*
+!/var/.gitkeep
+/public/index.html
+/public/privacy.html
+/public/*/index.html
+/public/*/catalog.html
+/public/*/res/
+/public/*/[0-9]*.html
+/config.local.php
+*.log
